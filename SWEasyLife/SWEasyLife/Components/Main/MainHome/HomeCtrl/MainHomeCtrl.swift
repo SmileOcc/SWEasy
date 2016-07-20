@@ -10,12 +10,16 @@ import UIKit
 
 class MainHomeCtrl: BaseViewController {
 
+    var _homeView : ELMainHomeView!
+    var _homeDatas : NSDictionary?
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+        initView()
         initData()
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,14 +32,25 @@ class MainHomeCtrl: BaseViewController {
     func initData() {
         
         let homeDataPath = NSBundle.mainBundle().pathForResource("Home", ofType: "plist")
-        let homeDataDic = NSDictionary(contentsOfFile: homeDataPath!)
-        print(homeDataDic)
-
+        _homeDatas = NSDictionary(contentsOfFile: homeDataPath!)
+        print(_homeDatas)
+        
+        refreshInitView()
     }
     
     func initView() {
         
+        _homeView = ELMainHomeView(frame: CGRectMake(0, 64, k_SCREEN_WIDE, k_SCREEN_HEIGHT - 49 - 64))
+        _homeView.backgroundColor = k_COLORRANDOM
+        self.view.addSubview(_homeView)
         
+    }
+    
+    func refreshInitView() {
+        
+        if (_homeDatas != nil) {
+            _homeView.homeDatas = _homeDatas
+        }
     }
     
 

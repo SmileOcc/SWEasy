@@ -58,6 +58,7 @@
 		46E016631D3F61D5001C4BE0 /* ELMainCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E016621D3F61D5001C4BE0 /* ELMainCarView.swift */; };
 		46E016651D3F6202001C4BE0 /* ELMainMyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E016641D3F6202001C4BE0 /* ELMainMyModel.swift */; };
 		46E016671D3F6214001C4BE0 /* ELMainMyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E016661D3F6214001C4BE0 /* ELMainMyView.swift */; };
+		46E0166C1D3F69B9001C4BE0 /* PublicMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0166B1D3F69B9001C4BE0 /* PublicMacro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +115,8 @@
 		46E016621D3F61D5001C4BE0 /* ELMainCarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMainCarView.swift; sourceTree = "<group>"; };
 		46E016641D3F6202001C4BE0 /* ELMainMyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMainMyModel.swift; sourceTree = "<group>"; };
 		46E016661D3F6214001C4BE0 /* ELMainMyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMainMyView.swift; sourceTree = "<group>"; };
+		46E016691D3F641A001C4BE0 /* SWEasyLifeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWEasyLifeHeader.h; sourceTree = "<group>"; };
+		46E0166B1D3F69B9001C4BE0 /* PublicMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicMacro.swift; sourceTree = "<group>"; };
 		52B36C4CD9BB87387C98715A /* Pods-SWEasyLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEasyLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWEasyLife/Pods-SWEasyLife.debug.xcconfig"; sourceTree = "<group>"; };
 		5FFB421F60C59571957757AB /* Pods_SWEasyLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWEasyLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -165,6 +168,8 @@
 				2E174C591D3B53C2008D0213 /* AppDelegate.swift */,
 				2E174C701D3B5A05008D0213 /* MainTabBarCtrl.swift */,
 				2E174C721D3B5A26008D0213 /* MainNavigationCtrl.swift */,
+				46E016691D3F641A001C4BE0 /* SWEasyLifeHeader.h */,
+				46E0166B1D3F69B9001C4BE0 /* PublicMacro.swift */,
 				2E174C5D1D3B53C2008D0213 /* Main.storyboard */,
 				2E174C601D3B53C3008D0213 /* Assets.xcassets */,
 				2E174C621D3B53C3008D0213 /* LaunchScreen.storyboard */,
@@ -690,6 +695,7 @@
 				46E016501D3F601D001C4BE0 /* ELMainHomeTableView.swift in Sources */,
 				46E016531D3F6062001C4BE0 /* ELHomeMainTableView.swift in Sources */,
 				2E174CB11D3BC66C008D0213 /* BaseButton.swift in Sources */,
+				46E0166C1D3F69B9001C4BE0 /* PublicMacro.swift in Sources */,
 				2E174C731D3B5A26008D0213 /* MainNavigationCtrl.swift in Sources */,
 				46E016571D3F60C8001C4BE0 /* ELMainCategoryView.swift in Sources */,
 				46E0165D1D3F616E001C4BE0 /* ELMainDMCView.swift in Sources */,
@@ -820,9 +826,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SWEasyLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FeiFan.SWEasyLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SWEasyLife/SWEasyLifeHeader.h;
 			};
 			name = Debug;
 		};
@@ -832,9 +840,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SWEasyLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FeiFan.SWEasyLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SWEasyLife/SWEasyLifeHeader.h;
 			};
 			name = Release;
 		};

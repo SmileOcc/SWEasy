@@ -1,0 +1,18 @@
+PODS:
+  - FLKAutoLayout (0.2.1)
+  - ORStackView (3.0.1):
+    - FLKAutoLayout (~> 0.2)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - ORStackView (~> 3.0)
+  - SwiftyJSON (~> 2.3)
+
+SPEC CHECKSUMS:
+  FLKAutoLayout: 9db6b30c2008d230da608e62c607b11c23b942e6
+  ORStackView: a1bb52748cd0ae29891c140baf22ff8972fb363c
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: e6a0f5550cf669a45cbbeb4bfbc6d61b70a9ac86
+
+COCOAPODS: 1.0.1

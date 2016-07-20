@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0085B2539215A81E6354AD76 /* Pods_SWEasyLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFB421F60C59571957757AB /* Pods_SWEasyLife.framework */; };
 		2E174C5A1D3B53C2008D0213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E174C591D3B53C2008D0213 /* AppDelegate.swift */; };
 		2E174C5F1D3B53C2008D0213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E174C5D1D3B53C2008D0213 /* Main.storyboard */; };
 		2E174C611D3B53C3008D0213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E174C601D3B53C3008D0213 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06882DCEED35796C715295FF /* Pods-SWEasyLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEasyLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWEasyLife/Pods-SWEasyLife.release.xcconfig"; sourceTree = "<group>"; };
 		2E174C561D3B53C2008D0213 /* SWEasyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWEasyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E174C591D3B53C2008D0213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E174C5E1D3B53C2008D0213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +88,8 @@
 		2E174CCD1D3BC899008D0213 /* icon_tabMe_1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabMe_1@3x.png"; sourceTree = "<group>"; };
 		2E174CCE1D3BC899008D0213 /* icon_tabMe_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabMe_2@2x.png"; sourceTree = "<group>"; };
 		2E174CCF1D3BC899008D0213 /* icon_tabMe_2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabMe_2@3x.png"; sourceTree = "<group>"; };
+		52B36C4CD9BB87387C98715A /* Pods-SWEasyLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEasyLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWEasyLife/Pods-SWEasyLife.debug.xcconfig"; sourceTree = "<group>"; };
+		5FFB421F60C59571957757AB /* Pods_SWEasyLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWEasyLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,17 +97,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0085B2539215A81E6354AD76 /* Pods_SWEasyLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AADEED156596E5CCD998832 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FFB421F60C59571957757AB /* Pods_SWEasyLife.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2E174C4D1D3B53C2008D0213 = {
 			isa = PBXGroup;
 			children = (
 				2E174C581D3B53C2008D0213 /* SWEasyLife */,
 				2E174C571D3B53C2008D0213 /* Products */,
+				9E1E9724C35C601C13C87204 /* Pods */,
+				0AADEED156596E5CCD998832 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -457,6 +472,15 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
+		9E1E9724C35C601C13C87204 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52B36C4CD9BB87387C98715A /* Pods-SWEasyLife.debug.xcconfig */,
+				06882DCEED35796C715295FF /* Pods-SWEasyLife.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -464,9 +488,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E174C681D3B53C3008D0213 /* Build configuration list for PBXNativeTarget "SWEasyLife" */;
 			buildPhases = (
+				4CC8BDC94B1F591E8F4C343D /* [CP] Check Pods Manifest.lock */,
 				2E174C521D3B53C2008D0213 /* Sources */,
 				2E174C531D3B53C2008D0213 /* Frameworks */,
 				2E174C541D3B53C2008D0213 /* Resources */,
+				C3E68B433B48C7926EC23590 /* [CP] Embed Pods Frameworks */,
+				BC4B98CE28386423F7848C67 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -542,6 +569,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CC8BDC94B1F591E8F4C343D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC4B98CE28386423F7848C67 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWEasyLife/Pods-SWEasyLife-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3E68B433B48C7926EC23590 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWEasyLife/Pods-SWEasyLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E174C521D3B53C2008D0213 /* Sources */ = {
@@ -672,6 +747,7 @@
 		};
 		2E174C691D3B53C3008D0213 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B36C4CD9BB87387C98715A /* Pods-SWEasyLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SWEasyLife/Info.plist;
@@ -683,6 +759,7 @@
 		};
 		2E174C6A1D3B53C3008D0213 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06882DCEED35796C715295FF /* Pods-SWEasyLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SWEasyLife/Info.plist;

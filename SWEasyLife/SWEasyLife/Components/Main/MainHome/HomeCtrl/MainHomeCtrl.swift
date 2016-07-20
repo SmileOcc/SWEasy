@@ -14,11 +14,28 @@ class MainHomeCtrl: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        initData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    // MARK: - initData
+    func initData() {
+        
+        let homeDataPath = NSBundle.mainBundle().pathForResource("Home", ofType: "plist")
+        let homeDataDic = NSDictionary(contentsOfFile: homeDataPath!)
+        print(homeDataDic)
+
+    }
+    
+    func initView() {
+        
+        
     }
     
 

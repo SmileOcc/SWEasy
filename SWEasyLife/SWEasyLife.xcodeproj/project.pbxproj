@@ -45,6 +45,19 @@
 		2E174CE11D3BC899008D0213 /* icon_tabMe_1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E174CCD1D3BC899008D0213 /* icon_tabMe_1@3x.png */; };
 		2E174CE21D3BC899008D0213 /* icon_tabMe_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E174CCE1D3BC899008D0213 /* icon_tabMe_2@2x.png */; };
 		2E174CE31D3BC899008D0213 /* icon_tabMe_2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E174CCF1D3BC899008D0213 /* icon_tabMe_2@3x.png */; };
+		46E016491D3F4DE2001C4BE0 /* Home.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46E016481D3F4DE2001C4BE0 /* Home.plist */; };
+		46E0164B1D3F5E64001C4BE0 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0164A1D3F5E64001C4BE0 /* BaseTableView.swift */; };
+		46E016501D3F601D001C4BE0 /* ELMainHomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0164F1D3F601D001C4BE0 /* ELMainHomeTableView.swift */; };
+		46E016531D3F6062001C4BE0 /* ELHomeMainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E016521D3F6062001C4BE0 /* ELHomeMainTableView.swift */; };
+		46E016571D3F60C8001C4BE0 /* ELMainCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E016561D3F60C8001C4BE0 /* ELMainCategoryView.swift */; };
+		46E016591D3F60F9001C4BE0 /* ELMainCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E016581D3F60F9001C4BE0 /* ELMainCategoryModel.swift */; };
+		46E0165B1D3F6148001C4BE0 /* ELMainDMCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0165A1D3F6148001C4BE0 /* ELMainDMCModel.swift */; };
+		46E0165D1D3F616E001C4BE0 /* ELMainDMCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0165C1D3F616E001C4BE0 /* ELMainDMCView.swift */; };
+		46E0165F1D3F618A001C4BE0 /* ELMainHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0165E1D3F618A001C4BE0 /* ELMainHomeView.swift */; };
+		46E016611D3F61C0001C4BE0 /* ELMainCarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E016601D3F61C0001C4BE0 /* ELMainCarModel.swift */; };
+		46E016631D3F61D5001C4BE0 /* ELMainCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E016621D3F61D5001C4BE0 /* ELMainCarView.swift */; };
+		46E016651D3F6202001C4BE0 /* ELMainMyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E016641D3F6202001C4BE0 /* ELMainMyModel.swift */; };
+		46E016671D3F6214001C4BE0 /* ELMainMyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E016661D3F6214001C4BE0 /* ELMainMyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +101,19 @@
 		2E174CCD1D3BC899008D0213 /* icon_tabMe_1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabMe_1@3x.png"; sourceTree = "<group>"; };
 		2E174CCE1D3BC899008D0213 /* icon_tabMe_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabMe_2@2x.png"; sourceTree = "<group>"; };
 		2E174CCF1D3BC899008D0213 /* icon_tabMe_2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabMe_2@3x.png"; sourceTree = "<group>"; };
+		46E016481D3F4DE2001C4BE0 /* Home.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Home.plist; sourceTree = "<group>"; };
+		46E0164A1D3F5E64001C4BE0 /* BaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
+		46E0164F1D3F601D001C4BE0 /* ELMainHomeTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMainHomeTableView.swift; sourceTree = "<group>"; };
+		46E016521D3F6062001C4BE0 /* ELHomeMainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELHomeMainTableView.swift; sourceTree = "<group>"; };
+		46E016561D3F60C8001C4BE0 /* ELMainCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELMainCategoryView.swift; path = SWEasyLife/Components/Main/MainCategory/CategoryView/ELMainCategoryView.swift; sourceTree = SOURCE_ROOT; };
+		46E016581D3F60F9001C4BE0 /* ELMainCategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMainCategoryModel.swift; sourceTree = "<group>"; };
+		46E0165A1D3F6148001C4BE0 /* ELMainDMCModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMainDMCModel.swift; sourceTree = "<group>"; };
+		46E0165C1D3F616E001C4BE0 /* ELMainDMCView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMainDMCView.swift; sourceTree = "<group>"; };
+		46E0165E1D3F618A001C4BE0 /* ELMainHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMainHomeView.swift; sourceTree = "<group>"; };
+		46E016601D3F61C0001C4BE0 /* ELMainCarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMainCarModel.swift; sourceTree = "<group>"; };
+		46E016621D3F61D5001C4BE0 /* ELMainCarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMainCarView.swift; sourceTree = "<group>"; };
+		46E016641D3F6202001C4BE0 /* ELMainMyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMainMyModel.swift; sourceTree = "<group>"; };
+		46E016661D3F6214001C4BE0 /* ELMainMyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMainMyView.swift; sourceTree = "<group>"; };
 		52B36C4CD9BB87387C98715A /* Pods-SWEasyLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEasyLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWEasyLife/Pods-SWEasyLife.debug.xcconfig"; sourceTree = "<group>"; };
 		5FFB421F60C59571957757AB /* Pods_SWEasyLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWEasyLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -133,6 +159,7 @@
 		2E174C581D3B53C2008D0213 /* SWEasyLife */ = {
 			isa = PBXGroup;
 			children = (
+				46E016461D3F4D8E001C4BE0 /* DataPlist */,
 				2E174CB51D3BC744008D0213 /* Resources */,
 				2E174C6B1D3B59B6008D0213 /* Components */,
 				2E174C591D3B53C2008D0213 /* AppDelegate.swift */,
@@ -205,9 +232,9 @@
 		2E174C751D3B5A88008D0213 /* MainCategory */ = {
 			isa = PBXGroup;
 			children = (
+				46E016541D3F608C001C4BE0 /* CategoryModel */,
+				46E016551D3F608C001C4BE0 /* CategoryView */,
 				2E174C8B1D3B5CE7008D0213 /* CategoryCtrl */,
-				2E174C8C1D3B5CE7008D0213 /* CategoryModel */,
-				2E174C8D1D3B5CE7008D0213 /* CategoryView */,
 			);
 			path = MainCategory;
 			sourceTree = "<group>";
@@ -225,9 +252,9 @@
 		2E174C771D3B5A88008D0213 /* MainHome */ = {
 			isa = PBXGroup;
 			children = (
+				46E0164E1D3F601D001C4BE0 /* HomeModel */,
+				46E016511D3F6028001C4BE0 /* HomeView */,
 				2E174C911D3B5CF8008D0213 /* HomeCtrl */,
-				2E174C921D3B5CF8008D0213 /* HomeModel */,
-				2E174C931D3B5CF8008D0213 /* HomeView */,
 			);
 			path = MainHome;
 			sourceTree = "<group>";
@@ -253,6 +280,7 @@
 		2E174C891D3B5CDB008D0213 /* CarModel */ = {
 			isa = PBXGroup;
 			children = (
+				46E016601D3F61C0001C4BE0 /* ELMainCarModel.swift */,
 			);
 			path = CarModel;
 			sourceTree = "<group>";
@@ -260,6 +288,7 @@
 		2E174C8A1D3B5CDB008D0213 /* CarView */ = {
 			isa = PBXGroup;
 			children = (
+				46E016621D3F61D5001C4BE0 /* ELMainCarView.swift */,
 			);
 			path = CarView;
 			sourceTree = "<group>";
@@ -270,20 +299,6 @@
 				2E174C9B1D3B5DB3008D0213 /* MainCategoryCtrl.swift */,
 			);
 			path = CategoryCtrl;
-			sourceTree = "<group>";
-		};
-		2E174C8C1D3B5CE7008D0213 /* CategoryModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CategoryModel;
-			sourceTree = "<group>";
-		};
-		2E174C8D1D3B5CE7008D0213 /* CategoryView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CategoryView;
 			sourceTree = "<group>";
 		};
 		2E174C8E1D3B5CEF008D0213 /* DMCCtrl */ = {
@@ -297,6 +312,7 @@
 		2E174C8F1D3B5CEF008D0213 /* DMCModel */ = {
 			isa = PBXGroup;
 			children = (
+				46E0165A1D3F6148001C4BE0 /* ELMainDMCModel.swift */,
 			);
 			path = DMCModel;
 			sourceTree = "<group>";
@@ -304,6 +320,7 @@
 		2E174C901D3B5CEF008D0213 /* DMCView */ = {
 			isa = PBXGroup;
 			children = (
+				46E0165C1D3F616E001C4BE0 /* ELMainDMCView.swift */,
 			);
 			path = DMCView;
 			sourceTree = "<group>";
@@ -314,20 +331,6 @@
 				2E174C991D3B5D93008D0213 /* MainHomeCtrl.swift */,
 			);
 			path = HomeCtrl;
-			sourceTree = "<group>";
-		};
-		2E174C921D3B5CF8008D0213 /* HomeModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HomeModel;
-			sourceTree = "<group>";
-		};
-		2E174C931D3B5CF8008D0213 /* HomeView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HomeView;
 			sourceTree = "<group>";
 		};
 		2E174C941D3B5D01008D0213 /* MyCtrl */ = {
@@ -341,6 +344,7 @@
 		2E174C951D3B5D01008D0213 /* MyModel */ = {
 			isa = PBXGroup;
 			children = (
+				46E016641D3F6202001C4BE0 /* ELMainMyModel.swift */,
 			);
 			path = MyModel;
 			sourceTree = "<group>";
@@ -348,6 +352,7 @@
 		2E174C961D3B5D01008D0213 /* MyView */ = {
 			isa = PBXGroup;
 			children = (
+				46E016661D3F6214001C4BE0 /* ELMainMyView.swift */,
 			);
 			path = MyView;
 			sourceTree = "<group>";
@@ -385,6 +390,7 @@
 				2E174CAB1D3BC66C008D0213 /* BaseImageView.swift */,
 				2E174CAC1D3BC66C008D0213 /* BaseLable.swift */,
 				2E174CAD1D3BC66C008D0213 /* BaseView.swift */,
+				46E0164A1D3F5E64001C4BE0 /* BaseTableView.swift */,
 			);
 			path = SelfView;
 			sourceTree = "<group>";
@@ -470,6 +476,56 @@
 				2E174CCF1D3BC899008D0213 /* icon_tabMe_2@3x.png */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		46E016461D3F4D8E001C4BE0 /* DataPlist */ = {
+			isa = PBXGroup;
+			children = (
+				46E016471D3F4DC7001C4BE0 /* HomePlist */,
+			);
+			name = DataPlist;
+			path = Components/DataPlist;
+			sourceTree = "<group>";
+		};
+		46E016471D3F4DC7001C4BE0 /* HomePlist */ = {
+			isa = PBXGroup;
+			children = (
+				46E016481D3F4DE2001C4BE0 /* Home.plist */,
+			);
+			path = HomePlist;
+			sourceTree = "<group>";
+		};
+		46E0164E1D3F601D001C4BE0 /* HomeModel */ = {
+			isa = PBXGroup;
+			children = (
+				46E0164F1D3F601D001C4BE0 /* ELMainHomeTableView.swift */,
+			);
+			path = HomeModel;
+			sourceTree = "<group>";
+		};
+		46E016511D3F6028001C4BE0 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				46E016521D3F6062001C4BE0 /* ELHomeMainTableView.swift */,
+				46E0165E1D3F618A001C4BE0 /* ELMainHomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		46E016541D3F608C001C4BE0 /* CategoryModel */ = {
+			isa = PBXGroup;
+			children = (
+				46E016581D3F60F9001C4BE0 /* ELMainCategoryModel.swift */,
+			);
+			path = CategoryModel;
+			sourceTree = "<group>";
+		};
+		46E016551D3F608C001C4BE0 /* CategoryView */ = {
+			isa = PBXGroup;
+			children = (
+				46E016561D3F60C8001C4BE0 /* ELMainCategoryView.swift */,
+			);
+			path = CategoryView;
 			sourceTree = "<group>";
 		};
 		9E1E9724C35C601C13C87204 /* Pods */ = {
@@ -563,6 +619,7 @@
 				2E174CD01D3BC899008D0213 /* icn_dmc_1@2x.png in Resources */,
 				2E174CE31D3BC899008D0213 /* icon_tabMe_2@3x.png in Resources */,
 				2E174CD91D3BC899008D0213 /* icon_tabBuy_1@3x.png in Resources */,
+				46E016491D3F4DE2001C4BE0 /* Home.plist in Resources */,
 				2E174C5F1D3B53C2008D0213 /* Main.storyboard in Resources */,
 				2E174CD21D3BC899008D0213 /* icn_dmc_2@2x.png in Resources */,
 			);
@@ -624,18 +681,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E174C9A1D3B5D93008D0213 /* MainHomeCtrl.swift in Sources */,
+				46E0165F1D3F618A001C4BE0 /* ELMainHomeView.swift in Sources */,
 				2E174C5A1D3B53C2008D0213 /* AppDelegate.swift in Sources */,
 				2E174C981D3B5D63008D0213 /* MainCarCtrl.swift in Sources */,
 				2E174C9E1D3B5DC9008D0213 /* MainDMCCtrl.swift in Sources */,
+				46E0164B1D3F5E64001C4BE0 /* BaseTableView.swift in Sources */,
 				2E174CB01D3BC66C008D0213 /* BaseModel.swift in Sources */,
+				46E016501D3F601D001C4BE0 /* ELMainHomeTableView.swift in Sources */,
+				46E016531D3F6062001C4BE0 /* ELHomeMainTableView.swift in Sources */,
 				2E174CB11D3BC66C008D0213 /* BaseButton.swift in Sources */,
 				2E174C731D3B5A26008D0213 /* MainNavigationCtrl.swift in Sources */,
+				46E016571D3F60C8001C4BE0 /* ELMainCategoryView.swift in Sources */,
+				46E0165D1D3F616E001C4BE0 /* ELMainDMCView.swift in Sources */,
 				2E174CB21D3BC66C008D0213 /* BaseImageView.swift in Sources */,
 				2E174CAF1D3BC66C008D0213 /* BaseViewController.swift in Sources */,
 				2E174CA01D3B5DE1008D0213 /* MainMyCtrl.swift in Sources */,
+				46E016611D3F61C0001C4BE0 /* ELMainCarModel.swift in Sources */,
 				2E174CB31D3BC66C008D0213 /* BaseLable.swift in Sources */,
+				46E016671D3F6214001C4BE0 /* ELMainMyView.swift in Sources */,
 				2E174CB41D3BC66C008D0213 /* BaseView.swift in Sources */,
+				46E016591D3F60F9001C4BE0 /* ELMainCategoryModel.swift in Sources */,
 				2E174C711D3B5A05008D0213 /* MainTabBarCtrl.swift in Sources */,
+				46E016631D3F61D5001C4BE0 /* ELMainCarView.swift in Sources */,
+				46E0165B1D3F6148001C4BE0 /* ELMainDMCModel.swift in Sources */,
+				46E016651D3F6202001C4BE0 /* ELMainMyModel.swift in Sources */,
 				2E174C9C1D3B5DB3008D0213 /* MainCategoryCtrl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -752,7 +821,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SWEasyLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = occ.SWEasyLife;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FeiFan.SWEasyLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -764,7 +833,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SWEasyLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = occ.SWEasyLife;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FeiFan.SWEasyLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

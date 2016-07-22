@@ -42,6 +42,14 @@ class MainHomeCtrl: BaseViewController {
         
         _homeView = ELMainHomeView(frame: CGRectMake(0, 64, k_SCREEN_WIDE, k_SCREEN_HEIGHT - 49 - 64))
         _homeView.backgroundColor = k_COLORRANDOM
+        print(_homeView.testSET_GET)
+        _homeView.testSET_GET = 10
+        print(_homeView.testSET_GET)
+
+        print(_homeView.testSET_GET2)
+        _homeView.testSET_GET2 = "test22"
+        print(_homeView.testSET_GET2)
+        
         self.view.addSubview(_homeView)
         
     }
@@ -50,6 +58,7 @@ class MainHomeCtrl: BaseViewController {
         
         if (_homeDatas != nil) {
             _homeView.homeDatas = _homeDatas
+            //print(_homeView.homeDatas)
         }
     }
     

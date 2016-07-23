@@ -14,8 +14,6 @@ class MainHomeCtrl: BaseViewController {
     var _homeDatas : NSDictionary?
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         initView()
         initData()
@@ -42,6 +40,8 @@ class MainHomeCtrl: BaseViewController {
         
         _homeView = ELMainHomeView(frame: CGRectMake(0, 64, k_SCREEN_WIDE, k_SCREEN_HEIGHT - 49 - 64))
         _homeView.backgroundColor = k_COLORRANDOM
+        
+        // MARK: occ测试 set get方法
         print(_homeView.testSET_GET)
         _homeView.testSET_GET = 10
         print(_homeView.testSET_GET)

@@ -13,7 +13,23 @@ class MainCategoryCtrl: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        // MARK : 取的是对应控制器上的图片
+        /*
+        if self.tabBarItem != nil {
+            
+            let unSelectImage = self.tabBarItem.image?.imageWithRenderingMode(.AlwaysOriginal)
+            self.tabBarItem.image = unSelectImage
+            
+            let image = self.tabBarItem.selectedImage?.imageWithRenderingMode(.AlwaysOriginal)
+            self.tabBarItem.selectedImage = image
+            
+            
+            self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName:UIColor.orangeColor()], forState: .Selected)
+            self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName:UIColor.blackColor()], forState: .Normal)
+
+        }
+         */
     }
 
     override func didReceiveMemoryWarning() {

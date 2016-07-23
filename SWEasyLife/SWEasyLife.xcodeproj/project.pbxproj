@@ -45,6 +45,7 @@
 		2E174CE11D3BC899008D0213 /* icon_tabMe_1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E174CCD1D3BC899008D0213 /* icon_tabMe_1@3x.png */; };
 		2E174CE21D3BC899008D0213 /* icon_tabMe_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E174CCE1D3BC899008D0213 /* icon_tabMe_2@2x.png */; };
 		2E174CE31D3BC899008D0213 /* icon_tabMe_2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E174CCF1D3BC899008D0213 /* icon_tabMe_2@3x.png */; };
+		2E5E82921D4328BB0019E0A2 /* ELBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E82911D4328BB0019E0A2 /* ELBannerView.swift */; };
 		46E016491D3F4DE2001C4BE0 /* Home.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46E016481D3F4DE2001C4BE0 /* Home.plist */; };
 		46E0164B1D3F5E64001C4BE0 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0164A1D3F5E64001C4BE0 /* BaseTableView.swift */; };
 		46E016501D3F601D001C4BE0 /* ELMainHomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0164F1D3F601D001C4BE0 /* ELMainHomeTableView.swift */; };
@@ -102,6 +103,7 @@
 		2E174CCD1D3BC899008D0213 /* icon_tabMe_1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabMe_1@3x.png"; sourceTree = "<group>"; };
 		2E174CCE1D3BC899008D0213 /* icon_tabMe_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabMe_2@2x.png"; sourceTree = "<group>"; };
 		2E174CCF1D3BC899008D0213 /* icon_tabMe_2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabMe_2@3x.png"; sourceTree = "<group>"; };
+		2E5E82911D4328BB0019E0A2 /* ELBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELBannerView.swift; sourceTree = "<group>"; };
 		46E016481D3F4DE2001C4BE0 /* Home.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Home.plist; sourceTree = "<group>"; };
 		46E0164A1D3F5E64001C4BE0 /* BaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		46E0164F1D3F601D001C4BE0 /* ELMainHomeTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMainHomeTableView.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 		2E174C6E1D3B59B6008D0213 /* SelfLibs */ = {
 			isa = PBXGroup;
 			children = (
+				2E5E828B1D4327C60019E0A2 /* SelfPublic */,
 				2E174CA41D3BC66C008D0213 /* Base */,
 				2E174CAE1D3BC66C008D0213 /* HttpRequest */,
 			);
@@ -483,6 +486,14 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
+		2E5E828B1D4327C60019E0A2 /* SelfPublic */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E82911D4328BB0019E0A2 /* ELBannerView.swift */,
+			);
+			path = SelfPublic;
+			sourceTree = "<group>";
+		};
 		46E016461D3F4D8E001C4BE0 /* DataPlist */ = {
 			isa = PBXGroup;
 			children = (
@@ -708,6 +719,7 @@
 				2E174CB41D3BC66C008D0213 /* BaseView.swift in Sources */,
 				46E016591D3F60F9001C4BE0 /* ELMainCategoryModel.swift in Sources */,
 				2E174C711D3B5A05008D0213 /* MainTabBarCtrl.swift in Sources */,
+				2E5E82921D4328BB0019E0A2 /* ELBannerView.swift in Sources */,
 				46E016631D3F61D5001C4BE0 /* ELMainCarView.swift in Sources */,
 				46E0165B1D3F6148001C4BE0 /* ELMainDMCModel.swift in Sources */,
 				46E016651D3F6202001C4BE0 /* ELMainMyModel.swift in Sources */,

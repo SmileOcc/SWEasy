@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.60372583089999998" green="0.74826470389999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Category" id="C8J-st-4lx"/>
+                    <tabBarItem key="tabBarItem" title="Category" image="icon_tabBi_1.png" selectedImage="icon_tabBi_2.png" id="C8J-st-4lx"/>
                     <navigationItem key="navigationItem" title="Category" id="ip0-gz-Edj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aV7-FE-RP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -58,22 +58,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.68999742289999999" green="1" blue="0.43113119709999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="qvE-Yz-t9t"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="icon_tabHome_1.png" selectedImage="icon_tabHome_2" id="qvE-Yz-t9t"/>
                     <navigationItem key="navigationItem" title="Home" id="wd5-gG-jyB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6Z-Ep-Lec" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="857" y="-911"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Ctrl-->
         <scene sceneID="eRR-jU-C0A">
             <objects>
-                <tabBarController id="y8j-AK-Npb" sceneMemberID="viewController">
+                <tabBarController id="y8j-AK-Npb" customClass="MainTabBarCtrl" customModule="SWEasyLife" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="3tU-Ui-nhY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="R1D-ZT-oXU" kind="relationship" relationship="viewControllers" id="PFQ-k4-bKD"/>
@@ -154,7 +155,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.36470589040000001" green="0.77647066119999997" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Car" id="LB2-so-arb"/>
+                    <tabBarItem key="tabBarItem" title="Car" image="icon_tabBuy_1.png" selectedImage="icon_tabBuy_2.png" id="LB2-so-arb"/>
                     <navigationItem key="navigationItem" title="Car" id="aeV-sk-tiA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YbW-J9-Q9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -174,7 +175,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.89716347249999995" blue="0.3833741557" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="DMC" id="GU4-KY-oKI"/>
+                    <tabBarItem key="tabBarItem" title="DMC" image="icn_dmc_1.png" selectedImage="icn_dmc_2.png" id="GU4-KY-oKI"/>
                     <navigationItem key="navigationItem" title="DMC" id="Ak2-ss-kCu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAW-O9-Itd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -211,7 +212,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.70647885099999996" green="0.29729343889999998" blue="0.094548253509999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My" id="7kL-Sa-IUv"/>
+                    <tabBarItem key="tabBarItem" title="My" image="icon_tabMe_1.png" selectedImage="icon_tabMe_2.png" id="7kL-Sa-IUv"/>
                     <navigationItem key="navigationItem" title="My" id="zCY-4I-mKG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="628-CF-oKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -227,6 +228,7 @@
         <image name="icon_tabBuy_1.png" width="23" height="21"/>
         <image name="icon_tabBuy_2.png" width="23" height="21"/>
         <image name="icon_tabHome_1.png" width="23" height="21"/>
+        <image name="icon_tabHome_2" width="23" height="21"/>
         <image name="icon_tabHome_2.png" width="23" height="21"/>
         <image name="icon_tabMe_1.png" width="23" height="21"/>
         <image name="icon_tabMe_2.png" width="23" height="21"/>

@@ -15,7 +15,7 @@ class MainHomeCtrl: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        initView()
+        initMainView()
         initData()
     
     }
@@ -36,7 +36,7 @@ class MainHomeCtrl: BaseViewController {
         refreshInitView()
     }
     
-    func initView() {
+    func initMainView() {
         
         _homeView = ELMainHomeView(frame: CGRectMake(0, 64, k_SCREEN_WIDE, k_SCREEN_HEIGHT - 49 - 64))
         _homeView.backgroundColor = k_COLORRANDOM

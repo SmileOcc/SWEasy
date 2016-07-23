@@ -10,12 +10,39 @@ import UIKit
 
 class MainDMCCtrl: BaseViewController {
 
+    var mainDMCView : ELMainDMCView?
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+
+        initMainView()
+        
+        initDatas()
+        
     }
 
+    
+    func initMainView() {
+        mainDMCView = ELMainDMCView(frame: CGRectMake(0,64,k_SCREEN_WIDE,k_SCREEN_HEIGHT - 64 - 49))
+        mainDMCView?.backgroundColor = k_COLORRANDOM
+        self.view.addSubview(mainDMCView!)
+    }
+    
+    
+    lazy var imageArray: [String] = {
+        var array: [String] = []
+        
+        for i in 1...20 {
+            array.append("\(i).jpg")
+        }
+        
+        return array
+    }()
+    func initDatas() {
+        
+        mainDMCView?.imageDatas = self.imageArray
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -21,7 +21,7 @@ class ELMainHomeView: BaseView,UITableViewDelegate,UITableViewDataSource{
     var homeDatas : NSDictionary? {
         set {
             storeHomeDatas = newValue
-            if (storeHomeDatas == nil) {
+            if (storeHomeDatas != nil) {
                 initDatas(storeHomeDatas!)
             }
         }
@@ -80,7 +80,7 @@ class ELMainHomeView: BaseView,UITableViewDelegate,UITableViewDataSource{
         //self.addSubview(bannerView!)
         
         
-        self.homeTable = ELHomeMainTableView(frame: CGRectMake(0, 0, k_SCREEN_WIDE, k_SCREEN_HEIGHT), style: .Plain)
+        self.homeTable = ELHomeMainTableView(frame: CGRectMake(0, 0, k_SCREEN_WIDE, CGRectGetHeight(self.frame)), style: .Plain)
         self.homeTable?.backgroundColor = UIColor.lightGrayColor()
         self.homeTable!.delegate = self
         self.homeTable!.dataSource = self

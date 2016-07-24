@@ -113,8 +113,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5RO-rf-3D4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.86731640129999998" blue="0.33517183319999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.70647885099999996" green="0.29729343889999998" blue="0.094548253509999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -173,7 +174,7 @@
                     <view key="view" contentMode="scaleToFill" id="lYn-ZC-7wj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.89716347249999995" blue="0.3833741557" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.86731640129999998" blue="0.33517183319999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="DMC" image="icn_dmc_1.png" selectedImage="icn_dmc_2.png" id="GU4-KY-oKI"/>
                     <navigationItem key="navigationItem" title="DMC" id="Ak2-ss-kCu"/>

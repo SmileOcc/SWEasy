@@ -24,7 +24,6 @@ class MainDMCCtrl: BaseViewController {
     
     func initMainView() {
         mainDMCView = ELMainDMCView(frame: CGRectMake(0,64,k_SCREEN_WIDE,k_SCREEN_HEIGHT - 64 - 49))
-        mainDMCView?.backgroundColor = k_COLORRANDOM
         self.view.addSubview(mainDMCView!)
     }
     
@@ -41,6 +40,7 @@ class MainDMCCtrl: BaseViewController {
     func initDatas() {
         
         mainDMCView?.imageDatas = self.imageArray
+        mainDMCView?.imageDatas2 = self.imageArray
     }
     
     override func didReceiveMemoryWarning() {

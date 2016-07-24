@@ -9,6 +9,7 @@
 import UIKit
 
 let reuseIdentifier = "collCell"
+let reuseIdentifier2 = "collCell2"
 
 class ELMainDMCView: BaseView,UICollectionViewDelegate,UICollectionViewDataSource{
 
@@ -39,8 +40,22 @@ class ELMainDMCView: BaseView,UICollectionViewDelegate,UICollectionViewDataSourc
         }
     }
     
+    var storeImageDatas2: NSArray?
+    var imageDatas2: NSArray {
+        set {
+            storeImageDatas2 = newValue
+            if storeImageDatas2 != nil {
+                self.collectionView2?.reloadData()
+            }
+        }
+        get {
+            return self.storeImageDatas2!
+        }
+    }
+    
     
     var collectionView : ELCollectionView?
+    var collectionView2: ELCollectionView?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -57,15 +72,28 @@ class ELMainDMCView: BaseView,UICollectionViewDelegate,UICollectionViewDataSourc
     // MARK: initView
     
     func initViews() {
-        
+        //self.backgroundColor = UIColor.clearColor()
         let layout = LineLayout()
         self.collectionView = ELCollectionView(frame: CGRectMake(0, 0, k_SCREEN_WIDE, 200), collectionViewLayout: layout)
+        self.collectionView?.backgroundColor = UIColor.clearColor()
         self.collectionView?.dataSource = self
         self.collectionView?.delegate = self
         self.collectionView?.registerClass(ImageTextCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
         self.addSubview(collectionView!)
         
+        
+        let layout2 = UICollectionViewFlowLayout()
+        layout2.itemSize.width = k_SCREEN_WIDE / 3.0 - 20
+        layout2.itemSize.height = k_SCREEN_WIDE / 3.0 - 20
+        layout2.scrollDirection = .Vertical
+        
+        self.collectionView2 = ELCollectionView(frame: CGRectMake(0, 200, k_SCREEN_WIDE, self.frame.size.height - 200), collectionViewLayout: layout2)
+        self.collectionView2?.backgroundColor = UIColor.clearColor()
+        self.collectionView2?.dataSource = self
+        self.collectionView2?.delegate = self
+        self.collectionView2?.registerClass(ImageTextCell.self, forCellWithReuseIdentifier: reuseIdentifier2)
+        self.addSubview(collectionView2!)
         
     }
     
@@ -77,19 +105,45 @@ class ELMainDMCView: BaseView,UICollectionViewDelegate,UICollectionViewDataSourc
     
     // MARK: collectionView delegate
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if storeImageDatas != nil {
-            return storeImageDatas!.count
+        if collectionView == self.collectionView {
+            if storeImageDatas != nil {
+                return storeImageDatas!.count
+            }
+        } else if collectionView == self.collectionView2 {
+            if storeImageDatas2 != nil {
+                return storeImageDatas2!.count
+            }
         }
         return 4
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell: ImageTextCell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ImageTextCell
-        cell.contentView.backgroundColor = k_COLORRANDOM
-        if self.storeImageDatas?.count > indexPath.row {
-            
-            cell.imageStr = self.storeImageDatas![indexPath.row] as? NSString
+        
+        var cellId = reuseIdentifier
+        if collectionView == self.collectionView {
+            cellId = reuseIdentifier
+        } else if collectionView == self.collectionView2 {
+            cellId = reuseIdentifier2
         }
+        
+        let cell: ImageTextCell = collectionView.dequeueReusableCellWithReuseIdentifier(cellId, forIndexPath: indexPath) as! ImageTextCell
+        
+        
+        if collectionView == self.collectionView {
+
+            if self.storeImageDatas?.count > indexPath.row {
+                
+                cell.imageStr = self.storeImageDatas![indexPath.row] as? NSString
+            }
+        } else if collectionView == self.collectionView2 {
+
+            if self.storeImageDatas2?.count > indexPath.row {
+                
+                cell.imageStr = self.storeImageDatas2![indexPath.row] as? NSString
+            }
+        }
+
+        
         return cell
     }
     
@@ -203,7 +257,7 @@ class LineLayout: UICollectionViewFlowLayout {
      - returns: 最终停留的位置
      */
     
-    override func targetContentOffsetForProposedContentOffset(proposedContentOffset: CGPoint) -> CGPoint {
+    override func targetContentOffsetForProposedContentOffset(proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
        
         //实现这个方法的目的是：当停止滑动，时刻有一张图片是位于屏幕最中央的。
         let lastRect = CGRectMake(proposedContentOffset.x, proposedContentOffset.y, self.collectionView!.frame.width, self.collectionView!.frame.height)

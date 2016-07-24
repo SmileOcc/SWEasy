@@ -38,9 +38,7 @@ class MainHomeCtrl: BaseViewController {
     
     func initMainView() {
         
-        _homeView = ELMainHomeView(frame: CGRectMake(0, 64, k_SCREEN_WIDE, k_SCREEN_HEIGHT - 49 - 64))
-        _homeView.backgroundColor = k_COLORRANDOM
-        
+        _homeView = ELMainHomeView(frame: CGRectMake(0, 64, k_SCREEN_WIDE, k_SCREEN_HEIGHT - 49 - 64))        
         // MARK: occ测试 set get方法
         print(_homeView.testSET_GET)
         _homeView.testSET_GET = 10

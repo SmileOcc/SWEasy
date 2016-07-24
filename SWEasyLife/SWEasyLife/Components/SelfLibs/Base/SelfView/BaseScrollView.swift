@@ -1,14 +1,14 @@
 //
-//  ELMainHomeTableView.swift
+//  BaseScrollView.swift
 //  SWEasyLife
 //
-//  Created by occ on 16/7/20.
+//  Created by occ on 16/7/24.
 //  Copyright © 2016年 ox. All rights reserved.
 //
 
 import UIKit
 
-class ELMainHomeTableView: BaseTableView {
+class BaseScrollView: UIScrollView {
 
     /*
     // Only override drawRect: if you perform custom drawing.

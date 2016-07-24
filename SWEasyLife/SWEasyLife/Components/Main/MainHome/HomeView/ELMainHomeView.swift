@@ -10,7 +10,23 @@ import UIKit
 
 class ELMainHomeView: BaseView,UITableViewDelegate,UITableViewDataSource{
     
-    var bannerViewH : CGFloat = 160
+    var bannerViewH: CGFloat = 160
+    
+    var storeBannerDatas: NSMutableArray? = NSMutableArray()
+    var bannerDatas: NSMutableArray {
+        set {
+            storeBannerDatas?.removeAllObjects()
+            storeBannerDatas?.addObjectsFromArray(newValue as [AnyObject])
+            if storeBannerDatas?.count > 0 {
+                self.bannerView?.imageDatas = storeBannerDatas!
+            }
+        }
+        get {
+            return self.storeBannerDatas!
+        }
+    }
+    
+    
     var bannerView : ELBannerView?
     
     var homeTable : ELHomeMainTableView?
@@ -76,9 +92,6 @@ class ELMainHomeView: BaseView,UITableViewDelegate,UITableViewDataSource{
     func initViews() {
       
         self.bannerView = ELBannerView(frame: CGRectMake(0,0,k_SCREEN_WIDE,bannerViewH))
-        self.bannerView?.backgroundColor = UIColor.orangeColor()
-        //self.addSubview(bannerView!)
-        
         
         self.homeTable = ELHomeMainTableView(frame: CGRectMake(0, 0, k_SCREEN_WIDE, CGRectGetHeight(self.frame)), style: .Plain)
         self.homeTable?.backgroundColor = UIColor.lightGrayColor()
@@ -92,7 +105,27 @@ class ELMainHomeView: BaseView,UITableViewDelegate,UITableViewDataSource{
     }
     
     func initDatas(dataDic: NSDictionary) {
+        print(dataDic)
+        let items = dataDic["items"] as? NSArray
         
+        if items?.count > 0 {
+            
+            items?.enumerateObjectsUsingBlock({ (obj, index, stop) in
+                let adverts = obj["adverts"] as? NSArray
+                if adverts?.count > 0 && index == 0{
+                    let tempBanners = NSMutableArray()
+
+                    //MARK: occ测试数据
+                    for var i = 0; i < adverts!.count; ++i {
+                        let advertDic = adverts![i] as? NSDictionary
+                        let adverModel = HomeAdverModel()
+                        adverModel.initModelData(advertDic)
+                        tempBanners.addObject(adverModel)
+                    }
+                    self.bannerDatas = tempBanners
+                }
+            })
+        }
     }
     
     

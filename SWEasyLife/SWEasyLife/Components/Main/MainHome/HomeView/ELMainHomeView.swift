@@ -116,7 +116,7 @@ class ELMainHomeView: BaseView,UITableViewDelegate,UITableViewDataSource{
                     let tempBanners = NSMutableArray()
 
                     //MARK: occ测试数据
-                    for var i = 0; i < adverts!.count; ++i {
+                    for i in 0 ..< adverts!.count {
                         let advertDic = adverts![i] as? NSDictionary
                         let adverModel = HomeAdverModel()
                         adverModel.initModelData(advertDic)

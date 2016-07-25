@@ -21,6 +21,10 @@ let k_PageSize: NSInteger = 20
 
 let k_COLORRANDOM : UIColor = UIColor(red: CGFloat(arc4random()%255) / 255.0, green: CGFloat(arc4random()%255) / 255.0, blue: CGFloat(arc4random()%255) / 255.0, alpha: 1.0)
 
+func colorrandom() -> UIColor {
+    return UIColor(red: CGFloat(arc4random()%255) / 255.0, green: CGFloat(arc4random()%255) / 255.0, blue: CGFloat(arc4random()%255) / 255.0, alpha: 1.0)
+}
+
 let k_LineOrange : UIColor = UIColor(red: 210 / 255.0, green: 201 / 255.0, blue: 189 / 255.0, alpha: 1.0)
 
 let k_BgColor: UIColor = UIColor(red: 242 / 255.0, green: 242 / 255.0, blue: 242 / 255.0, alpha: 1.0)

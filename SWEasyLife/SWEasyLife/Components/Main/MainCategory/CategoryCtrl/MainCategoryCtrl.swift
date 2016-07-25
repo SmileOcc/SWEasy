@@ -10,16 +10,52 @@ import UIKit
 
 class MainCategoryCtrl: BaseViewController {
 
+    var categoryView: ELMainCategoryView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let categoryView = ELMainCategoryView(frame: CGRectMake(0,64,k_SCREEN_WIDE,k_SCREEN_HEIGHT-49-64))
-        self.view.addSubview(categoryView)
+        
+        let fontNames = UIFont.familyNames()
+        print("---------\(fontNames)")
+        initMainViews()
+        
+        initDatas()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func initMainViews() {
+        self.categoryView = ELMainCategoryView(frame: CGRectMake(0,64,k_SCREEN_WIDE,k_SCREEN_HEIGHT-49-64))
+        self.view.addSubview(categoryView!)
+    }
+    
+    func initDatas() {
+        
+        let path = NSBundle.mainBundle().pathForResource("CategroyFirst", ofType: "plist")
+        let dataDic = NSDictionary(contentsOfFile: path!)
+        if dataDic != nil {
+            
+            let datasArray = dataDic!["items"]
+            if datasArray?.count > 0 {
+                for i in 0 ..< datasArray!.count {
+                    let dic = datasArray![i] as? NSDictionary
+                    let cateModel = ELCategoryModel()
+                    cateModel.initDatas(dic!)
+                    ELMainCategoryModel.sharedInstance.categoryModels.addObject(cateModel)
+                }
+            }
+        }
+        
+        if ELMainCategoryModel.sharedInstance.categoryModels.count > 0 {
+            self.categoryView!.updateViews()
+        }
+
     }
     
 

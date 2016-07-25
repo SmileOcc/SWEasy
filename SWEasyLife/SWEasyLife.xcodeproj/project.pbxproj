@@ -70,7 +70,8 @@
 		2E5E82F41D43E3780019E0A2 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E82F31D43E3780019E0A2 /* 5.jpg */; };
 		2E5E82F91D446B860019E0A2 /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E82F81D446B860019E0A2 /* BaseScrollView.swift */; };
 		2E5E82FB1D4474C30019E0A2 /* HomeAdverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E82FA1D4474C30019E0A2 /* HomeAdverModel.swift */; };
-		46A70CB91D45D44B005A5EA5 /* Category.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46A70CB81D45D44B005A5EA5 /* Category.plist */; };
+		46A70CBB1D45D536005A5EA5 /* CategroyFirst.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46A70CBA1D45D536005A5EA5 /* CategroyFirst.plist */; };
+		46A70CBD1D45D54E005A5EA5 /* CategorySecond.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46A70CBC1D45D54E005A5EA5 /* CategorySecond.plist */; };
 		46AE6E611D45CED80024CF7D /* ELCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AE6E601D45CED80024CF7D /* ELCategoryModel.swift */; };
 		46E016491D3F4DE2001C4BE0 /* Home.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46E016481D3F4DE2001C4BE0 /* Home.plist */; };
 		46E0164B1D3F5E64001C4BE0 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0164A1D3F5E64001C4BE0 /* BaseTableView.swift */; };
@@ -153,7 +154,8 @@
 		2E5E82F31D43E3780019E0A2 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		2E5E82F81D446B860019E0A2 /* BaseScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseScrollView.swift; sourceTree = "<group>"; };
 		2E5E82FA1D4474C30019E0A2 /* HomeAdverModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAdverModel.swift; sourceTree = "<group>"; };
-		46A70CB81D45D44B005A5EA5 /* Category.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Category.plist; sourceTree = "<group>"; };
+		46A70CBA1D45D536005A5EA5 /* CategroyFirst.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CategroyFirst.plist; sourceTree = "<group>"; };
+		46A70CBC1D45D54E005A5EA5 /* CategorySecond.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CategorySecond.plist; sourceTree = "<group>"; };
 		46AE6E601D45CED80024CF7D /* ELCategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELCategoryModel.swift; sourceTree = "<group>"; };
 		46E016481D3F4DE2001C4BE0 /* Home.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Home.plist; sourceTree = "<group>"; };
 		46E0164A1D3F5E64001C4BE0 /* BaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
@@ -580,7 +582,8 @@
 			isa = PBXGroup;
 			children = (
 				46E016481D3F4DE2001C4BE0 /* Home.plist */,
-				46A70CB81D45D44B005A5EA5 /* Category.plist */,
+				46A70CBA1D45D536005A5EA5 /* CategroyFirst.plist */,
+				46A70CBC1D45D54E005A5EA5 /* CategorySecond.plist */,
 			);
 			path = HomePlist;
 			sourceTree = "<group>";
@@ -690,7 +693,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E174CE21D3BC899008D0213 /* icon_tabMe_2@2x.png in Resources */,
-				46A70CB91D45D44B005A5EA5 /* Category.plist in Resources */,
 				2E5E82F21D43E2A40019E0A2 /* 20.jpg in Resources */,
 				2E5E82E41D43E26A0019E0A2 /* 13.jpg in Resources */,
 				2E174CD81D3BC899008D0213 /* icon_tabBuy_1@2x.png in Resources */,
@@ -722,7 +724,9 @@
 				2E174CE31D3BC899008D0213 /* icon_tabMe_2@3x.png in Resources */,
 				2E5E82D61D43E2160019E0A2 /* 6.jpg in Resources */,
 				2E5E82DE1D43E24C0019E0A2 /* 10.jpg in Resources */,
+				46A70CBB1D45D536005A5EA5 /* CategroyFirst.plist in Resources */,
 				2E174CD91D3BC899008D0213 /* icon_tabBuy_1@3x.png in Resources */,
+				46A70CBD1D45D54E005A5EA5 /* CategorySecond.plist in Resources */,
 				2E5E82F41D43E3780019E0A2 /* 5.jpg in Resources */,
 				2E5E82DA1D43E23A0019E0A2 /* 8.jpg in Resources */,
 				2E5E82CE1D43E1F30019E0A2 /* 2.jpg in Resources */,

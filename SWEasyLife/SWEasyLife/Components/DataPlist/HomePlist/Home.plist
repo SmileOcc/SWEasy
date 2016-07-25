@@ -5,6 +5,8 @@
 	<key>items</key>
 	<array>
 		<dict>
+			<key>templateType</key>
+			<string>Template0</string>
 			<key>id</key>
 			<string>bd8769c56ad04fe7a79abc2fb1e015b2</string>
 			<key>index</key>
@@ -62,6 +64,8 @@
 			</array>
 		</dict>
 		<dict>
+			<key>templateType</key>
+			<string>Template1</string>
 			<key>id</key>
 			<string>befbbffc19714cc2a328f817b9ffcd27</string>
 			<key>index</key>

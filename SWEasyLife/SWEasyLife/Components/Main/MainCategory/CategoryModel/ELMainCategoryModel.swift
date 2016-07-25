@@ -36,6 +36,8 @@ import UIKit
 class ELMainCategoryModel: BaseModel {
     
     var categoryModels: NSMutableArray = NSMutableArray()
+    var categorySecondDatas: NSMutableArray = NSMutableArray()
+    
     static let sharedInstance = ELMainCategoryModel()
     private override init() {} //error:This prevents others from using the default '()' initializer for this class.
 
@@ -45,5 +47,6 @@ class ELMainCategoryModel: BaseModel {
         
         return categoryModels
     }
+    
 
 }

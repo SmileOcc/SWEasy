@@ -8,10 +8,20 @@
 
 import UIKit
 
+
+protocol MainCategoryViewDelegate : NSObjectProtocol {
+    
+    func mainCategoryView(categoryView: ELMainCategoryView, index: Int)
+}
+
 let k_MainCategoryTableW:CGFloat = 100.0
 class ELMainCategoryView: BaseView, UITableViewDelegate, UITableViewDataSource {
 
     var categoryTable: BaseTableView?
+    var categoryCollectionView: BaseCollectionView?
+    weak var mainCategoryDelegate: MainCategoryViewDelegate?
+
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -38,9 +48,9 @@ class ELMainCategoryView: BaseView, UITableViewDelegate, UITableViewDataSource {
         self.addSubview(self.categoryTable!)
         
         let layout = UICollectionViewFlowLayout()
-        let collectionView = BaseCollectionView(frame: CGRectMake(100, 0, k_SCREEN_WIDE-100, CGRectGetHeight(self.frame)), collectionViewLayout: layout)
-        collectionView.backgroundColor = colorrandom()
-        self.addSubview(collectionView)
+        self.categoryCollectionView = BaseCollectionView(frame: CGRectMake(100, 0, k_SCREEN_WIDE-100, CGRectGetHeight(self.frame)), collectionViewLayout: layout)
+        self.categoryCollectionView!.backgroundColor = colorrandom()
+        self.addSubview(self.categoryCollectionView!)
     }
     
     
@@ -65,6 +75,12 @@ class ELMainCategoryView: BaseView, UITableViewDelegate, UITableViewDataSource {
         return cell!
     }
     
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if ELMainCategoryModel.sharedInstance.categoryModels.count > indexPath.row {
+            
+        }
+    }
     
 
 }

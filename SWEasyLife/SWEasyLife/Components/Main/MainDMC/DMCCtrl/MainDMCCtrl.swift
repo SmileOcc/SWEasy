@@ -14,16 +14,14 @@ class MainDMCCtrl: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
         initMainView()
-        
         initDatas()
         
     }
 
     
     func initMainView() {
-        mainDMCView = ELMainDMCView(frame: CGRectMake(0,64,k_SCREEN_WIDE,k_SCREEN_HEIGHT - 64 - 49))
+        self.mainDMCView = ELMainDMCView(frame: CGRectMake(0,64,k_SCREEN_WIDE,k_SCREEN_HEIGHT - 64 - 49))
         self.view.addSubview(mainDMCView!)
     }
     

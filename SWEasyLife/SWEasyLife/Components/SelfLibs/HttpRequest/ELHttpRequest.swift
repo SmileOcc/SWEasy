@@ -49,4 +49,15 @@ class ELHttpRequest: BaseModel {
 
     }
     
+    // MARK: 书数据
+    func requestBooksDatas(url url:String?, parmas: NSDictionary?, listener:OnHttpListener) {
+        
+        if let array = NSArray(contentsOfFile: url!) {
+           
+            listener(isSuccessed: true, datas: array, error: nil)
+        } else {
+            listener(isSuccessed: false, datas: nil, error: nil)
+        }
+    }
+    
 }

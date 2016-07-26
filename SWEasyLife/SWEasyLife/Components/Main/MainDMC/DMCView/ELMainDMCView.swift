@@ -150,6 +150,7 @@ class ELMainDMCView: BaseView,UICollectionViewDelegate,UICollectionViewDataSourc
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
         print("select : \(indexPath.row)")
+        
     }
     
 }

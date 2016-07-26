@@ -14,6 +14,20 @@ class ELDMCBooksCtrl: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let path = NSBundle.mainBundle().pathForResource("Books", ofType: "plist")
+        ELHttpRequest.sharedInstance.requestBooksDatas(url: path!, parmas: nil) { (isSuccessed, datas, error) in
+            
+            var books: [ELBookModel] = []
+
+            if isSuccessed {
+                
+                for dict in datas as! [NSDictionary] {
+                    let book = ELBookModel(dict: dict)
+                    books += [book]
+                }
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

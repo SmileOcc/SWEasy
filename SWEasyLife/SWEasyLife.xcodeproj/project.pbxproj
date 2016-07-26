@@ -644,6 +644,15 @@
 		46E016511D3F6028001C4BE0 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				4681FC791D47371A0052BFFA /* Template0.swift */,
+				4681FC7A1D47371A0052BFFA /* Template1.swift */,
+				4681FC7B1D47371A0052BFFA /* Template2.swift */,
+				4681FC7C1D47371A0052BFFA /* Template3.swift */,
+				4681FC7D1D47371A0052BFFA /* Template4.swift */,
+				4681FC7E1D47371A0052BFFA /* Template5.swift */,
+				4681FC7F1D47371A0052BFFA /* Template6.swift */,
+				4681FC801D47371A0052BFFA /* Template7.swift */,
+				4681FC811D47371A0052BFFA /* TemplateBase.swift */,
 				46E016521D3F6062001C4BE0 /* ELHomeMainTableView.swift */,
 				46E0165E1D3F618A001C4BE0 /* ELMainHomeView.swift */,
 				2E5E833F1D4666DC0019E0A2 /* Template0.swift */,

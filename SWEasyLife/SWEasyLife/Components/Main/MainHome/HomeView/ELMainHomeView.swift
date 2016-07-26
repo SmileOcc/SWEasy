@@ -33,8 +33,8 @@ class ELMainHomeView: BaseView,UITableViewDelegate,UITableViewDataSource{
     
 
     // 定义两个变量。第一个用来做计算属性，并不存放具体的值，第二个才是存储属性。在计算属性中的setter里给存储属性赋值，
-    var storeHomeDatas : NSDictionary?
-    var homeDatas : NSDictionary? {
+    var storeHomeDatas : NSArray?
+    var homeDatas : NSArray? {
         set {
             storeHomeDatas = newValue
             if (storeHomeDatas != nil) {
@@ -104,28 +104,28 @@ class ELMainHomeView: BaseView,UITableViewDelegate,UITableViewDataSource{
         self.homeTable?.tableHeaderView = bannerView
     }
     
-    func initDatas(dataDic: NSDictionary) {
-        print(dataDic)
-        let items = dataDic["items"] as? NSArray
-        
-        if items?.count > 0 {
-            
-            items?.enumerateObjectsUsingBlock({ (obj, index, stop) in
-                let adverts = obj["adverts"] as? NSArray
-                if adverts?.count > 0 && index == 0{
-                    let tempBanners = NSMutableArray()
-
-                    //MARK: occ测试数据
-                    for i in 0 ..< adverts!.count {
-                        let advertDic = adverts![i] as? NSDictionary
-                        let adverModel = HomeAdverModel()
-                        adverModel.initModelData(advertDic)
-                        tempBanners.addObject(adverModel)
-                    }
-                    self.bannerDatas = tempBanners
-                }
-            })
-        }
+    func initDatas(dataDic: NSArray) {
+//        print(dataDic)
+//        let items = dataDic["items"] as? NSArray
+//        
+//        if items?.count > 0 {
+//            
+//            items?.enumerateObjectsUsingBlock({ (obj, index, stop) in
+//                let adverts = obj["adverts"] as? NSArray
+//                if adverts?.count > 0 && index == 0{
+//                    let tempBanners = NSMutableArray()
+//
+//                    //MARK: occ测试数据
+//                    for i in 0 ..< adverts!.count {
+//                        let advertDic = adverts![i] as? NSDictionary
+//                        let adverModel = HomeAdverModel()
+//                        adverModel.initModelData(advertDic)
+//                        tempBanners.addObject(adverModel)
+//                    }
+//                    self.bannerDatas = tempBanners
+//                }
+//            })
+//        }
     }
     
     

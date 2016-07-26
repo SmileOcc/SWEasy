@@ -11,7 +11,6 @@ import UIKit
 class MainHomeCtrl: BaseViewController {
 
     var _homeView : ELMainHomeView!
-    var _homeDatas : NSDictionary?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,15 +29,18 @@ class MainHomeCtrl: BaseViewController {
     func initData() {
         
         let homeDataPath = NSBundle.mainBundle().pathForResource("Home", ofType: "plist")
-        _homeDatas = NSDictionary(contentsOfFile: homeDataPath!)
-        print(_homeDatas)
+        ELHttpRequest.sharedInstance.requestHomeDatas(url: homeDataPath, parmas: nil) { (isSuccessed, datas, error) in
+            if isSuccessed {
+                self.handelDatas(datas as! NSArray)
+            }
+        }
         
         refreshInitView()
     }
     
     func initMainView() {
         
-        _homeView = ELMainHomeView(frame: CGRectMake(0, 64, k_SCREEN_WIDE, k_SCREEN_HEIGHT - 49 - 64))        
+        _homeView = ELMainHomeView(frame: CGRectMake(0, 64, k_SCREEN_WIDE , k_SCREEN_HEIGHT - 49 - 64))
         // MARK: occ测试 set get方法
         print(_homeView.testSET_GET)
         _homeView.testSET_GET = 10
@@ -50,14 +52,19 @@ class MainHomeCtrl: BaseViewController {
         
         self.view.addSubview(_homeView)
         
+        
+    }
+    
+    func handelDatas(datas: NSArray) {
+        
     }
     
     func refreshInitView() {
         
-        if (_homeDatas != nil) {
-            _homeView.homeDatas = _homeDatas
-            //print(_homeView.homeDatas)
-        }
+//        if (_homeDatas != nil) {
+//            _homeView.homeDatas = _homeDatas
+//            //print(_homeView.homeDatas)
+//        }
     }
     
 

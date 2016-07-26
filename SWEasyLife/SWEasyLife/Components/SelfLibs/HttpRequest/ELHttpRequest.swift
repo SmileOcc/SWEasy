@@ -32,4 +32,21 @@ class ELHttpRequest: BaseModel {
         }
     }
     
+    // MARK: 首页数据
+    func requestHomeDatas(url url:String?, parmas: NSDictionary?, listener:OnHttpListener) {
+        
+        let dataDic = NSDictionary(contentsOfFile: url!)
+        if dataDic != nil {
+            let datasArray = dataDic!["items"] as? NSArray
+            if datasArray?.count > 0 {
+                listener(isSuccessed: true, datas: datasArray!, error: nil)
+            }else {
+                listener(isSuccessed: false, datas: nil, error: nil)
+            }
+        }else {
+            listener(isSuccessed: false, datas: nil, error: nil)
+        }
+
+    }
+    
 }

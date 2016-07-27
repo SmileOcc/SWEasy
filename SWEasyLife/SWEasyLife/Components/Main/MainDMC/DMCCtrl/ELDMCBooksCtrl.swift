@@ -10,10 +10,15 @@ import UIKit
 
 class ELDMCBooksCtrl: BaseViewController {
 
+    var booksView: ELDMCBooksView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.backgroundColor = k_COLORRANDOM
+        
+        self.booksView = ELDMCBooksView(frame: CGRectMake(0, 0, k_SCREEN_WIDE, k_SCREEN_HEIGHT))
+        self.view.addSubview(booksView!)
         
         let path = NSBundle.mainBundle().pathForResource("Books", ofType: "plist")
         ELHttpRequest.sharedInstance.requestBooksDatas(url: path!, parmas: nil) { (isSuccessed, datas, error) in
@@ -26,6 +31,7 @@ class ELDMCBooksCtrl: BaseViewController {
                     let book = ELBookModel(dict: dict)
                     books += [book]
                 }
+                self.booksView?.books = books
             }
         }
     }

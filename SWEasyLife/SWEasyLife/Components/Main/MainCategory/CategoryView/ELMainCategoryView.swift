@@ -49,7 +49,7 @@ class ELMainCategoryView: BaseView, UITableViewDelegate, UITableViewDataSource {
         
         let layout = UICollectionViewFlowLayout()
         self.categoryCollectionView = BaseCollectionView(frame: CGRectMake(100, 0, k_SCREEN_WIDE-100, CGRectGetHeight(self.frame)), collectionViewLayout: layout)
-        self.categoryCollectionView!.backgroundColor = colorrandom()
+        self.categoryCollectionView!.backgroundColor = colorRandom()
         self.addSubview(self.categoryCollectionView!)
     }
     
@@ -67,7 +67,7 @@ class ELMainCategoryView: BaseView, UITableViewDelegate, UITableViewDataSource {
             cell = UITableViewCell(style: .Default, reuseIdentifier: "cateCellID")
             cell?.textLabel?.font = UIFont(name: "Heiti SC", size: 11)
         }
-        cell?.backgroundColor = colorrandom()
+        cell?.backgroundColor = colorRandom()
         if ELMainCategoryModel.sharedInstance.categoryModels.count > indexPath.row {
             let model = ELMainCategoryModel.sharedInstance.categoryModels[indexPath.row]
             cell?.textLabel?.text = model.name

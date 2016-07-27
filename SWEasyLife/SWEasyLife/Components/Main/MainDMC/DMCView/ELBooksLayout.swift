@@ -12,13 +12,18 @@ private let PageWidth: CGFloat = 362
 private let PageHeight: CGFloat = 568
 
 class ELBooksLayout: UICollectionViewFlowLayout {
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    
+    override init() {
+        super.init()
         
         scrollDirection = UICollectionViewScrollDirection.Horizontal
         itemSize = CGSizeMake(PageWidth, PageHeight)
         minimumLineSpacing = 10
+
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
     
     override func prepareLayout() {

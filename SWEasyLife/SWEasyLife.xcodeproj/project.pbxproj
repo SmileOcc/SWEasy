@@ -87,6 +87,10 @@
 		2EAD0F541D47BF9C0089E514 /* Books.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EAD0F531D47BF9C0089E514 /* Books.plist */; };
 		2EAD0F561D47C0140089E514 /* ELBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD0F551D47C0140089E514 /* ELBookModel.swift */; };
 		2EAD0F581D47C0480089E514 /* ELBookStoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD0F571D47C0480089E514 /* ELBookStoreModel.swift */; };
+		2EAD0F601D48F4A60089E514 /* UIImage+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD0F5F1D48F4A60089E514 /* UIImage+Helpers.swift */; };
+		2EAD0F621D49029A0089E514 /* ELDMCBookCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD0F611D49029A0089E514 /* ELDMCBookCtrl.swift */; };
+		2EAD0F661D4903E10089E514 /* ELBookLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD0F651D4903E10089E514 /* ELBookLayout.swift */; };
+		2EAD0F681D4906240089E514 /* ELBookCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD0F671D4906240089E514 /* ELBookCollectionCell.swift */; };
 		46A70CBB1D45D536005A5EA5 /* CategroyFirst.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46A70CBA1D45D536005A5EA5 /* CategroyFirst.plist */; };
 		46A70CBD1D45D54E005A5EA5 /* CategorySecond.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46A70CBC1D45D54E005A5EA5 /* CategorySecond.plist */; };
 		46A70CBF1D45F1F9005A5EA5 /* ELHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A70CBE1D45F1F9005A5EA5 /* ELHttpRequest.swift */; };
@@ -190,6 +194,10 @@
 		2EAD0F531D47BF9C0089E514 /* Books.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Books.plist; sourceTree = "<group>"; };
 		2EAD0F551D47C0140089E514 /* ELBookModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELBookModel.swift; sourceTree = "<group>"; };
 		2EAD0F571D47C0480089E514 /* ELBookStoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELBookStoreModel.swift; sourceTree = "<group>"; };
+		2EAD0F5F1D48F4A60089E514 /* UIImage+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Helpers.swift"; sourceTree = "<group>"; };
+		2EAD0F611D49029A0089E514 /* ELDMCBookCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELDMCBookCtrl.swift; sourceTree = "<group>"; };
+		2EAD0F651D4903E10089E514 /* ELBookLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELBookLayout.swift; sourceTree = "<group>"; };
+		2EAD0F671D4906240089E514 /* ELBookCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELBookCollectionCell.swift; sourceTree = "<group>"; };
 		46A70CBA1D45D536005A5EA5 /* CategroyFirst.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CategroyFirst.plist; sourceTree = "<group>"; };
 		46A70CBC1D45D54E005A5EA5 /* CategorySecond.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CategorySecond.plist; sourceTree = "<group>"; };
 		46A70CBE1D45F1F9005A5EA5 /* ELHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELHttpRequest.swift; sourceTree = "<group>"; };
@@ -404,6 +412,7 @@
 			children = (
 				2E174C9D1D3B5DC9008D0213 /* MainDMCCtrl.swift */,
 				2EAD0F491D47B5090089E514 /* ELDMCBooksCtrl.swift */,
+				2EAD0F611D49029A0089E514 /* ELDMCBookCtrl.swift */,
 			);
 			path = DMCCtrl;
 			sourceTree = "<group>";
@@ -424,7 +433,9 @@
 				46E0165C1D3F616E001C4BE0 /* ELMainDMCView.swift */,
 				2EAD0F4B1D47B5BF0089E514 /* ELDMCBooksView.swift */,
 				2EAD0F4F1D47B8A90089E514 /* ELBooksCollectionCell.swift */,
+				2EAD0F671D4906240089E514 /* ELBookCollectionCell.swift */,
 				2EAD0F511D47B96E0089E514 /* ELBooksLayout.swift */,
+				2EAD0F651D4903E10089E514 /* ELBookLayout.swift */,
 			);
 			path = DMCView;
 			sourceTree = "<group>";
@@ -612,6 +623,7 @@
 				2E5E82911D4328BB0019E0A2 /* ELBannerView.swift */,
 				2E5E82971D4331570019E0A2 /* ELCollectionView.swift */,
 				46F7D1051D4870A3007801F1 /* ExtensionView.swift */,
+				2EAD0F5F1D48F4A60089E514 /* UIImage+Helpers.swift */,
 			);
 			path = SelfPublic;
 			sourceTree = "<group>";
@@ -855,6 +867,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E174C9A1D3B5D93008D0213 /* MainHomeCtrl.swift in Sources */,
+				2EAD0F681D4906240089E514 /* ELBookCollectionCell.swift in Sources */,
 				46E0165F1D3F618A001C4BE0 /* ELMainHomeView.swift in Sources */,
 				2E5E82F91D446B860019E0A2 /* BaseScrollView.swift in Sources */,
 				2E174C5A1D3B53C2008D0213 /* AppDelegate.swift in Sources */,
@@ -868,6 +881,7 @@
 				2EAD0F4C1D47B5BF0089E514 /* ELDMCBooksView.swift in Sources */,
 				2EAD0F4E1D47B8510089E514 /* BaseCollectionCell.swift in Sources */,
 				2E174CB11D3BC66C008D0213 /* BaseButton.swift in Sources */,
+				2EAD0F601D48F4A60089E514 /* UIImage+Helpers.swift in Sources */,
 				46E0166C1D3F69B9001C4BE0 /* PublicMacro.swift in Sources */,
 				2E174C731D3B5A26008D0213 /* MainNavigationCtrl.swift in Sources */,
 				46E016571D3F60C8001C4BE0 /* ELMainCategoryView.swift in Sources */,
@@ -884,6 +898,7 @@
 				46E016611D3F61C0001C4BE0 /* ELMainCarModel.swift in Sources */,
 				2E5E834A1D4666DC0019E0A2 /* Template2.swift in Sources */,
 				2E5E82FB1D4474C30019E0A2 /* HomeAdverModel.swift in Sources */,
+				2EAD0F621D49029A0089E514 /* ELDMCBookCtrl.swift in Sources */,
 				2E174CB31D3BC66C008D0213 /* BaseLable.swift in Sources */,
 				46E016671D3F6214001C4BE0 /* ELMainMyView.swift in Sources */,
 				2EAD0F4A1D47B5090089E514 /* ELDMCBooksCtrl.swift in Sources */,
@@ -897,6 +912,7 @@
 				2E5E82921D4328BB0019E0A2 /* ELBannerView.swift in Sources */,
 				2E5E834F1D4666DC0019E0A2 /* Template7.swift in Sources */,
 				46E016631D3F61D5001C4BE0 /* ELMainCarView.swift in Sources */,
+				2EAD0F661D4903E10089E514 /* ELBookLayout.swift in Sources */,
 				2E5E82961D4331380019E0A2 /* BaseCollectionView.swift in Sources */,
 				2E5E83481D4666DC0019E0A2 /* Template0.swift in Sources */,
 				2E5E83491D4666DC0019E0A2 /* Template1.swift in Sources */,

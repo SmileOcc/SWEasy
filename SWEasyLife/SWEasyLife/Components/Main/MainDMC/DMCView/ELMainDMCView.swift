@@ -151,6 +151,9 @@ class ELMainDMCView: BaseView,UICollectionViewDelegate,UICollectionViewDataSourc
         
         print("select : \(indexPath.row)")
         
+        let booksCtrl = ELDMCBooksCtrl()
+        self.viewController()?.navigationController?.pushViewController(booksCtrl, animated: true)
+        
     }
     
 }

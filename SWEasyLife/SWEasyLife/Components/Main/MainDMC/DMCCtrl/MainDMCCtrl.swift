@@ -16,10 +16,6 @@ class MainDMCCtrl: BaseViewController {
 
         initMainView()
         initDatas()
-        
-        
-        let booksCtrl = ELDMCBooksCtrl()
-        self.navigationController?.pushViewController(booksCtrl, animated: true)
 
     }
 

@@ -104,6 +104,7 @@
 		46E016651D3F6202001C4BE0 /* ELMainMyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E016641D3F6202001C4BE0 /* ELMainMyModel.swift */; };
 		46E016671D3F6214001C4BE0 /* ELMainMyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E016661D3F6214001C4BE0 /* ELMainMyView.swift */; };
 		46E0166C1D3F69B9001C4BE0 /* PublicMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0166B1D3F69B9001C4BE0 /* PublicMacro.swift */; };
+		46F7D1061D4870A3007801F1 /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F7D1051D4870A3007801F1 /* ExtensionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -207,6 +208,7 @@
 		46E016661D3F6214001C4BE0 /* ELMainMyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMainMyView.swift; sourceTree = "<group>"; };
 		46E016691D3F641A001C4BE0 /* SWEasyLifeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWEasyLifeHeader.h; sourceTree = "<group>"; };
 		46E0166B1D3F69B9001C4BE0 /* PublicMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicMacro.swift; sourceTree = "<group>"; };
+		46F7D1051D4870A3007801F1 /* ExtensionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
 		52B36C4CD9BB87387C98715A /* Pods-SWEasyLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEasyLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWEasyLife/Pods-SWEasyLife.debug.xcconfig"; sourceTree = "<group>"; };
 		5FFB421F60C59571957757AB /* Pods_SWEasyLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWEasyLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -609,6 +611,7 @@
 			children = (
 				2E5E82911D4328BB0019E0A2 /* ELBannerView.swift */,
 				2E5E82971D4331570019E0A2 /* ELCollectionView.swift */,
+				46F7D1051D4870A3007801F1 /* ExtensionView.swift */,
 			);
 			path = SelfPublic;
 			sourceTree = "<group>";
@@ -644,15 +647,6 @@
 		46E016511D3F6028001C4BE0 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
-				4681FC791D47371A0052BFFA /* Template0.swift */,
-				4681FC7A1D47371A0052BFFA /* Template1.swift */,
-				4681FC7B1D47371A0052BFFA /* Template2.swift */,
-				4681FC7C1D47371A0052BFFA /* Template3.swift */,
-				4681FC7D1D47371A0052BFFA /* Template4.swift */,
-				4681FC7E1D47371A0052BFFA /* Template5.swift */,
-				4681FC7F1D47371A0052BFFA /* Template6.swift */,
-				4681FC801D47371A0052BFFA /* Template7.swift */,
-				4681FC811D47371A0052BFFA /* TemplateBase.swift */,
 				46E016521D3F6062001C4BE0 /* ELHomeMainTableView.swift */,
 				46E0165E1D3F618A001C4BE0 /* ELMainHomeView.swift */,
 				2E5E833F1D4666DC0019E0A2 /* Template0.swift */,
@@ -866,6 +860,7 @@
 				2E174C5A1D3B53C2008D0213 /* AppDelegate.swift in Sources */,
 				2E174C981D3B5D63008D0213 /* MainCarCtrl.swift in Sources */,
 				2EAD0F501D47B8A90089E514 /* ELBooksCollectionCell.swift in Sources */,
+				46F7D1061D4870A3007801F1 /* ExtensionView.swift in Sources */,
 				2E174C9E1D3B5DC9008D0213 /* MainDMCCtrl.swift in Sources */,
 				46E0164B1D3F5E64001C4BE0 /* BaseTableView.swift in Sources */,
 				2E174CB01D3BC66C008D0213 /* BaseModel.swift in Sources */,

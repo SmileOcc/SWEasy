@@ -13,7 +13,7 @@ class ELDMCBooksCtrl: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = k_COLORRANDOM
         
         let path = NSBundle.mainBundle().pathForResource("Books", ofType: "plist")
         ELHttpRequest.sharedInstance.requestBooksDatas(url: path!, parmas: nil) { (isSuccessed, datas, error) in

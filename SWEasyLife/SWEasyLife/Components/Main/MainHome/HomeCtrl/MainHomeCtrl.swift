@@ -31,7 +31,7 @@ class MainHomeCtrl: BaseViewController {
         let homeDataPath = NSBundle.mainBundle().pathForResource("Home", ofType: "plist")
         ELHttpRequest.sharedInstance.requestHomeDatas(url: homeDataPath, parmas: nil) { (isSuccessed, datas, error) in
             if isSuccessed {
-                self.handelDatas(datas as! NSArray)
+                self._homeView.layoutView();
             }
         }
         
@@ -55,9 +55,6 @@ class MainHomeCtrl: BaseViewController {
         
     }
     
-    func handelDatas(datas: NSArray) {
-        
-    }
     
     func refreshInitView() {
         

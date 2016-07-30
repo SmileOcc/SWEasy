@@ -10,12 +10,39 @@ import UIKit
 
 class Template2: TemplateBase {
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        initViews()
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    /*
+     
+     *     *
+     *     *
+     * * * *
+
     */
+    
+    func initViews() {
+        
+        for i in 0...7 {
+            
+            let tempView = UIView(frame: CGRectZero)
+            tempView.backgroundColor = colorRandom()
+            self.addSubview(tempView)
+            
+            let w = i < 4 ? CGRectGetWidth(self.frame) / 2.0 : CGRectGetWidth(self.frame) / 4.0
+            let h = i < 4 ? CGRectGetHeight(self.frame) * 0.3 : CGRectGetHeight(self.frame) * 0.4
+            let x = i < 4 ? w * CGFloat(i % 2) : w * CGFloat(i % 4)
+            let y = i < 4 ? h * CGFloat(i / 2) : CGRectGetHeight(self.frame) * 0.6
+            
+            tempView.frame = CGRectMake(x, y, w, h)
+        }
+    }
 
 }

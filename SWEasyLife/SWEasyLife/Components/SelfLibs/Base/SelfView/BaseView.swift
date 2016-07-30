@@ -18,6 +18,7 @@ class BaseView: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
 
     /*
     // Only override drawRect: if you perform custom drawing.

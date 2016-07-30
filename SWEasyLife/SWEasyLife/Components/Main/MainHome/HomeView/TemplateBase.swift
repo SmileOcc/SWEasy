@@ -10,8 +10,8 @@ import UIKit
 
 class TemplateBase: BaseView {
 
-    func templateHight() {
-        
+    func templateHight() -> CGFloat {
+        return CGRectGetHeight(self.frame)
     }
     
     

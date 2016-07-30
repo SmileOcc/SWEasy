@@ -91,6 +91,7 @@
 		2EAD0F621D49029A0089E514 /* ELDMCBookCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD0F611D49029A0089E514 /* ELDMCBookCtrl.swift */; };
 		2EAD0F661D4903E10089E514 /* ELBookLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD0F651D4903E10089E514 /* ELBookLayout.swift */; };
 		2EAD0F681D4906240089E514 /* ELBookCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD0F671D4906240089E514 /* ELBookCollectionCell.swift */; };
+		466E1CD01D4C45CC005CF4A6 /* HomeStoreAdverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E1CCF1D4C45CC005CF4A6 /* HomeStoreAdverModel.swift */; };
 		46A70CBB1D45D536005A5EA5 /* CategroyFirst.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46A70CBA1D45D536005A5EA5 /* CategroyFirst.plist */; };
 		46A70CBD1D45D54E005A5EA5 /* CategorySecond.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46A70CBC1D45D54E005A5EA5 /* CategorySecond.plist */; };
 		46A70CBF1D45F1F9005A5EA5 /* ELHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A70CBE1D45F1F9005A5EA5 /* ELHttpRequest.swift */; };
@@ -198,6 +199,7 @@
 		2EAD0F611D49029A0089E514 /* ELDMCBookCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELDMCBookCtrl.swift; sourceTree = "<group>"; };
 		2EAD0F651D4903E10089E514 /* ELBookLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELBookLayout.swift; sourceTree = "<group>"; };
 		2EAD0F671D4906240089E514 /* ELBookCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELBookCollectionCell.swift; sourceTree = "<group>"; };
+		466E1CCF1D4C45CC005CF4A6 /* HomeStoreAdverModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeStoreAdverModel.swift; sourceTree = "<group>"; };
 		46A70CBA1D45D536005A5EA5 /* CategroyFirst.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CategroyFirst.plist; sourceTree = "<group>"; };
 		46A70CBC1D45D54E005A5EA5 /* CategorySecond.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CategorySecond.plist; sourceTree = "<group>"; };
 		46A70CBE1D45F1F9005A5EA5 /* ELHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELHttpRequest.swift; sourceTree = "<group>"; };
@@ -652,6 +654,7 @@
 			isa = PBXGroup;
 			children = (
 				2E5E82FA1D4474C30019E0A2 /* HomeAdverModel.swift */,
+				466E1CCF1D4C45CC005CF4A6 /* HomeStoreAdverModel.swift */,
 			);
 			path = HomeModel;
 			sourceTree = "<group>";
@@ -887,6 +890,7 @@
 				46E016571D3F60C8001C4BE0 /* ELMainCategoryView.swift in Sources */,
 				46E0165D1D3F616E001C4BE0 /* ELMainDMCView.swift in Sources */,
 				2E5E83501D4666DC0019E0A2 /* TemplateBase.swift in Sources */,
+				466E1CD01D4C45CC005CF4A6 /* HomeStoreAdverModel.swift in Sources */,
 				2E174CB21D3BC66C008D0213 /* BaseImageView.swift in Sources */,
 				2E5E834B1D4666DC0019E0A2 /* Template3.swift in Sources */,
 				2EAD0F521D47B96E0089E514 /* ELBooksLayout.swift in Sources */,

@@ -10,6 +10,19 @@ import UIKit
 
 class ELMainHomeView: BaseView,UITableViewDelegate,UITableViewDataSource{
     
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        initViews()
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    
     var bannerViewH: CGFloat = 160
     
     var storeBannerDatas: NSMutableArray? = NSMutableArray()
@@ -72,21 +85,10 @@ class ELMainHomeView: BaseView,UITableViewDelegate,UITableViewDataSource{
         }
     }
     
-    
-    
-    
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
 
-        initViews()
+    func layoutView() {
         
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-         super.init(coder: aDecoder)
-    }
-    
     
     // MARK: initView
     func initViews() {

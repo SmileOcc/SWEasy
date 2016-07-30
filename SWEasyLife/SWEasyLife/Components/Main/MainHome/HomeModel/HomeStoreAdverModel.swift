@@ -10,14 +10,35 @@ import UIKit
 
 class HomeStoreAdverModel: BaseModel {
 
-    var adversDatas: NSArray?
+    //活动区集
+    var adversDatas: NSMutableArray?
     
     var adversPage: NSInteger = 0
     
     var adversTotalPage: NSInteger = 0
     
-    func initDatas(datas: AnyObject) {
+    override init() {
+        super.init()
+        
+        self.adversDatas = NSMutableArray()
         
     }
     
+
+    //MARK: 数据处理
+    func initDatas(datas: AnyObject?) {
+        
+        let items = datas as? NSArray
+        if items?.count > 0 {
+            
+            items?.enumerateObjectsUsingBlock({ (obj, index, stop) in
+                
+                let adverModel = HomeAdverModel()
+                adverModel.initModelData(obj as? NSDictionary)
+                self.adversDatas?.addObject(adverModel)
+
+            })
+        }
+    }
+
 }

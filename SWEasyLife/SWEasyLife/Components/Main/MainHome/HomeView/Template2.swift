@@ -44,5 +44,14 @@ class Template2: TemplateBase {
             tempView.frame = CGRectMake(x, y, w, h)
         }
     }
+    
+    
+    var datas: NSMutableArray? = NSMutableArray()
+    
+    
+    override func templateHeight() -> CGFloat {
+        return 190
+    }
+
 
 }

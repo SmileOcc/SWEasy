@@ -55,13 +55,13 @@ class ELBannerView: BaseView {
             }
         }
         
-        self.scrollView?.contentSize = CGSizeMake(k_SCREEN_WIDE * CGFloat(datas.count), 0)
-        datas.enumerateObjectsUsingBlock { (obj, index, stop) in
-            let adver = obj as! HomeAdverModel
-            let imgView = BaseImageView(frame: CGRectMake(CGFloat(index) * k_SCREEN_WIDE, 0, k_SCREEN_WIDE, CGRectGetHeight(self.frame)))
-            imgView.image = UIImage(named: adver.imgPath as! String)
-            self.scrollView?.addSubview(imgView)
-        }
+//        self.scrollView?.contentSize = CGSizeMake(k_SCREEN_WIDE * CGFloat(datas.count), 0)
+//        datas.enumerateObjectsUsingBlock { (obj, index, stop) in
+//            let adver = obj as! HomeAdverModel
+//            let imgView = BaseImageView(frame: CGRectMake(CGFloat(index) * k_SCREEN_WIDE, 0, k_SCREEN_WIDE, CGRectGetHeight(self.frame)))
+//            imgView.image = UIImage(named: adver.imgPath as! String)
+//            self.scrollView?.addSubview(imgView)
+//        }
     }
     
 }

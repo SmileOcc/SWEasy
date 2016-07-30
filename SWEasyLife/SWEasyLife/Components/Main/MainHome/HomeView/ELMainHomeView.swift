@@ -22,8 +22,8 @@ class ELMainHomeView: BaseView,UITableViewDelegate,UITableViewDataSource{
         super.init(coder: aDecoder)
     }
     
+    var storeAdverModel: HomeStoreAdverModel?
     
-    var bannerViewH: CGFloat = 160
     
     var storeBannerDatas: NSMutableArray? = NSMutableArray()
     var bannerDatas: NSMutableArray {
@@ -31,7 +31,7 @@ class ELMainHomeView: BaseView,UITableViewDelegate,UITableViewDataSource{
             storeBannerDatas?.removeAllObjects()
             storeBannerDatas?.addObjectsFromArray(newValue as [AnyObject])
             if storeBannerDatas?.count > 0 {
-                self.bannerView?.imageDatas = storeBannerDatas!
+//                self.bannerView?.imageDatas = storeBannerDatas!
             }
         }
         get {
@@ -51,7 +51,7 @@ class ELMainHomeView: BaseView,UITableViewDelegate,UITableViewDataSource{
         set {
             storeHomeDatas = newValue
             if (storeHomeDatas != nil) {
-                initDatas(storeHomeDatas!)
+
             }
         }
         get {
@@ -88,70 +88,93 @@ class ELMainHomeView: BaseView,UITableViewDelegate,UITableViewDataSource{
 
     func layoutView() {
         
+        self.homeTable?.frame = CGRectMake(0, 0, k_SCREEN_WIDE, CGRectGetHeight(self.frame))
+        self.homeTable?.reloadData()
+        
     }
     
     // MARK: initView
     func initViews() {
       
-        self.bannerView = ELBannerView(frame: CGRectMake(0,0,k_SCREEN_WIDE,bannerViewH))
         
-        self.homeTable = ELHomeMainTableView(frame: CGRectMake(0, 0, k_SCREEN_WIDE, CGRectGetHeight(self.frame)), style: .Plain)
+        self.homeTable = ELHomeMainTableView(frame: CGRectZero, style: .Plain)
         self.homeTable?.backgroundColor = UIColor.lightGrayColor()
         self.homeTable!.delegate = self
         self.homeTable!.dataSource = self
         
         self.addSubview(homeTable!)
         
-        
-        self.homeTable?.tableHeaderView = bannerView
     }
-    
-    func initDatas(dataDic: NSArray) {
-//        print(dataDic)
-//        let items = dataDic["items"] as? NSArray
-//        
-//        if items?.count > 0 {
-//            
-//            items?.enumerateObjectsUsingBlock({ (obj, index, stop) in
-//                let adverts = obj["adverts"] as? NSArray
-//                if adverts?.count > 0 && index == 0{
-//                    let tempBanners = NSMutableArray()
-//
-//                    //MARK: occ测试数据
-//                    for i in 0 ..< adverts!.count {
-//                        let advertDic = adverts![i] as? NSDictionary
-//                        let adverModel = HomeAdverModel()
-//                        adverModel.initModelData(advertDic)
-//                        tempBanners.addObject(adverModel)
-//                    }
-//                    self.bannerDatas = tempBanners
-//                }
-//            })
-//        }
-    }
-    
-    
     
     
     
     // MARK: table delegate
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return (storeAdverModel != nil) ? (storeAdverModel?.adversDatas?.count)! : 0
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
+        if storeAdverModel != nil {
+            if storeAdverModel?.adversDatas?.count > indexPath.row {
+                let adverModel: HomeAdverModel = storeAdverModel!.adversDatas![indexPath.row] as! HomeAdverModel
+                let templateName = adverModel.templateType as! String
+                
+                let nameSpace = NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as! String
+
+                let  className: AnyClass = NSClassFromString(nameSpace + "." + templateName)!;
+                let templateClass = (className as! TemplateBase.Type).init()
+                let templateHeight = templateClass.templateHeight()
+                
+                return templateHeight
+
+            }
+        }
         return 150
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("homeCellID")
+        
+        var cellId = "homeCellID"
+        var adverModel: HomeAdverModel?
+        
+        if storeAdverModel != nil {
+            if storeAdverModel?.adversDatas?.count > indexPath.row {
+                adverModel = storeAdverModel!.adversDatas![indexPath.row] as? HomeAdverModel
+                let templateName = adverModel!.templateType as! String
+                cellId = templateName
+            }
+        }
+
+        var cell = tableView.dequeueReusableCellWithIdentifier(cellId)
         if cell == nil {
-            cell = UITableViewCell(style: .Default, reuseIdentifier: "homeCellID")
-            cell?.backgroundColor = k_COLORRANDOM
+            cell = UITableViewCell(style: .Default, reuseIdentifier:cellId)
+//            cell?.backgroundColor = colorRandom()
+            
+            let nameSpace = NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as! String
+            
+            if cellId != "homeCellID" {
+                let  className: AnyClass = NSClassFromString(nameSpace + "." + cellId)!;
+                
+                let templateClass = (className as! TemplateBase.Type).init()
+                templateClass.backgroundColor = UIColor.yellowColor()
+                
+                cell?.contentView.addSubview(templateClass)
+
+            }
         }
         
-        cell?.textLabel?.text = "h-h"
+        if cellId != "homeCellID" {
+            let subViews = cell!.contentView.subviews as NSArray
+            for subView in subViews {
+                if subView is TemplateBase {
+                    if adverModel != nil {
+                        (subView as! TemplateBase).adverModel = adverModel
+                    }
+                }
+            }
+        }
         return cell!
     }
     

@@ -10,7 +10,7 @@ import UIKit
 
 class MainHomeCtrl: BaseViewController {
 
-    var _homeView : ELMainHomeView!
+    var homeView : ELMainHomeView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,10 +28,13 @@ class MainHomeCtrl: BaseViewController {
     // MARK: - initData
     func initData() {
         
+        let storeAdverModel: HomeStoreAdverModel = HomeStoreAdverModel()
         let homeDataPath = NSBundle.mainBundle().pathForResource("Home", ofType: "plist")
         ELHttpRequest.sharedInstance.requestHomeDatas(url: homeDataPath, parmas: nil) { (isSuccessed, datas, error) in
             if isSuccessed {
-                self._homeView.layoutView();
+                storeAdverModel.initDatas(datas)
+                self.homeView.storeAdverModel = storeAdverModel
+                self.homeView.layoutView();
             }
         }
         
@@ -40,17 +43,17 @@ class MainHomeCtrl: BaseViewController {
     
     func initMainView() {
         
-        _homeView = ELMainHomeView(frame: CGRectMake(0, 64, k_SCREEN_WIDE , k_SCREEN_HEIGHT - 49 - 64))
+        homeView = ELMainHomeView(frame: CGRectMake(0, 64, k_SCREEN_WIDE , k_SCREEN_HEIGHT - 49 - 64))
         // MARK: occ测试 set get方法
-        print(_homeView.testSET_GET)
-        _homeView.testSET_GET = 10
-        print(_homeView.testSET_GET)
+        print(homeView.testSET_GET)
+        homeView.testSET_GET = 10
+        print(homeView.testSET_GET)
 
-        print(_homeView.testSET_GET2)
-        _homeView.testSET_GET2 = "test22"
-        print(_homeView.testSET_GET2)
+        print(homeView.testSET_GET2)
+        homeView.testSET_GET2 = "test22"
+        print(homeView.testSET_GET2)
         
-        self.view.addSubview(_homeView)
+        self.view.addSubview(homeView)
         
         
     }
@@ -59,8 +62,8 @@ class MainHomeCtrl: BaseViewController {
     func refreshInitView() {
         
 //        if (_homeDatas != nil) {
-//            _homeView.homeDatas = _homeDatas
-//            //print(_homeView.homeDatas)
+//            homeView.homeDatas = _homeDatas
+//            //print(homeView.homeDatas)
 //        }
     }
     

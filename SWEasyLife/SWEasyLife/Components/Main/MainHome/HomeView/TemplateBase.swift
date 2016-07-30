@@ -10,7 +10,14 @@ import UIKit
 
 class TemplateBase: BaseView {
 
-    func templateHight() -> CGFloat {
+    var adverModel: HomeAdverModel? {
+        
+        didSet {
+            self.layoutSubviews()
+        }
+    }
+
+    func templateHeight() -> CGFloat {
         return CGRectGetHeight(self.frame)
     }
     

@@ -21,7 +21,8 @@ class Template0: TemplateBase {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-
+        self.layer.borderColor = UIColor.redColor().CGColor
+        self.layer.borderWidth = 2
         k_TemplateH = 160.0;
         initViews()
     }

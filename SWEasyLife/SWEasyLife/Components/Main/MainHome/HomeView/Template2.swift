@@ -13,6 +13,9 @@ class Template2: TemplateBase {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.layer.borderColor = UIColor.purpleColor().CGColor
+        self.layer.borderWidth = 2
+
         k_TemplateH = k_SCREEN_WIDE * 4 / 3.0
 
         initViews()

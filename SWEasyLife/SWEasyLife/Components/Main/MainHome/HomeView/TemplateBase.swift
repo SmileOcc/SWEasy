@@ -10,6 +10,7 @@ import UIKit
 
 class TemplateBase: BaseView {
 
+    var k_TemplateH: CGFloat = 160.0
     var adverModel: HomeAdverModel? {
         
         didSet {
@@ -18,8 +19,10 @@ class TemplateBase: BaseView {
     }
 
     func templateHeight() -> CGFloat {
-        return CGRectGetHeight(self.frame)
+        return k_TemplateH
     }
+    
+    func initViews() {}
     
     
     override init(frame: CGRect) {

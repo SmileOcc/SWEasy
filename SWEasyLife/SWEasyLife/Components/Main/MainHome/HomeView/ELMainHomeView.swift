@@ -149,17 +149,12 @@ class ELMainHomeView: BaseView,UITableViewDelegate,UITableViewDataSource{
 
         var cell = tableView.dequeueReusableCellWithIdentifier(cellId)
         if cell == nil {
-            cell = UITableViewCell(style: .Default, reuseIdentifier:cellId)
-//            cell?.backgroundColor = colorRandom()
-            
+            cell = UITableViewCell(style: .Default, reuseIdentifier:cellId)            
             let nameSpace = NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as! String
             
             if cellId != "homeCellID" {
                 let  className: AnyClass = NSClassFromString(nameSpace + "." + cellId)!;
-                
                 let templateClass = (className as! TemplateBase.Type).init()
-                templateClass.backgroundColor = UIColor.yellowColor()
-                
                 cell?.contentView.addSubview(templateClass)
 
             }

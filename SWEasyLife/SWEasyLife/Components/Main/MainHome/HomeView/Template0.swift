@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class Template0: TemplateBase {
 
 
@@ -15,13 +16,13 @@ class Template0: TemplateBase {
     
     var scrollView: BaseScrollView?
 
-    
     var bannerViewH: CGFloat = 160
 
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+
+        k_TemplateH = 160.0;
         initViews()
     }
     
@@ -32,18 +33,16 @@ class Template0: TemplateBase {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.frame = CGRectMake(0, 0, k_SCREEN_WIDE, bannerViewH)
+        self.frame = CGRectMake(0, 0, k_SCREEN_WIDE, k_TemplateH)
         self.scrollView?.frame = CGRectMake(0,0,k_SCREEN_WIDE,bannerViewH)
         initDatas(self.adverModel?.advers)
     }
     
     // MARK: initView
-    func initViews() {
-        
-        
-        
-        self.scrollView = BaseScrollView(frame: CGRectMake(0,0,k_SCREEN_WIDE,bannerViewH))
+    override func initViews() {
         self.backgroundColor = UIColor.redColor()
+
+        self.scrollView = BaseScrollView(frame: CGRectMake(0,0,k_SCREEN_WIDE,bannerViewH))
         self.scrollView?.pagingEnabled = true
         
         self.addSubview(scrollView!)
@@ -71,9 +70,4 @@ class Template0: TemplateBase {
         }
     }
 
-
-    
-    override func templateHeight() -> CGFloat {
-        return 160
-    }
 }

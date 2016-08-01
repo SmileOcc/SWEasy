@@ -12,11 +12,11 @@ class Template3: TemplateBase {
 
     var datas: NSMutableArray? = NSMutableArray()
     
-    
-    
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        k_TemplateH = 120
+        self.initViews()
         
     }
     
@@ -24,8 +24,19 @@ class Template3: TemplateBase {
         super.init(coder: aDecoder)
     }
     
-    
-    override func templateHeight() -> CGFloat {
-        return 220
+    override func initViews() {
+        self.backgroundColor = UIColor.grayColor()
+
+        
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        self.frame = CGRectMake(0, 0, k_SCREEN_WIDE, k_TemplateH)
+        
+        
+    }
+    
+
 }

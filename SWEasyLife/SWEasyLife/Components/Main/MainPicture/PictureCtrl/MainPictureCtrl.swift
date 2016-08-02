@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainCarCtrl: BaseViewController {
+class MainPictureCtrl: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

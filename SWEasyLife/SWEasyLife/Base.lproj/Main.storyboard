@@ -126,11 +126,11 @@
             </objects>
             <point key="canvasLocation" x="172.5" y="841.5"/>
         </scene>
-        <!--Car-->
+        <!--Picture-->
         <scene sceneID="Wbe-4n-VN7">
             <objects>
                 <navigationController id="NZn-Re-YkK" customClass="MainNavigationCtrl" customModule="SWEasyLife" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Car" image="icon_tabBuy_1.png" selectedImage="icon_tabBuy_2.png" id="v5c-xv-5Vy"/>
+                    <tabBarItem key="tabBarItem" title="Picture" image="icon_tabBuy_1.png" selectedImage="icon_tabBuy_2.png" id="v5c-xv-5Vy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EDW-qf-3GC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -143,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="186" y="1551"/>
         </scene>
-        <!--Car-->
+        <!--Picture-->
         <scene sceneID="8NV-m1-CSp">
             <objects>
-                <viewController id="1vQ-2W-NgA" customClass="MainCarCtrl" customModule="SWEasyLife" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1vQ-2W-NgA" customClass="MainPictureCtrl" customModule="SWEasyLife" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SHr-Sb-Bvu"/>
                         <viewControllerLayoutGuide type="bottom" id="At5-EO-9D4"/>
@@ -157,7 +157,7 @@
                         <color key="backgroundColor" red="0.36470589040000001" green="0.77647066119999997" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Car" image="icon_tabBuy_1.png" selectedImage="icon_tabBuy_2.png" id="LB2-so-arb"/>
-                    <navigationItem key="navigationItem" title="Car" id="aeV-sk-tiA"/>
+                    <navigationItem key="navigationItem" title="Picture" id="aeV-sk-tiA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YbW-J9-Q9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ELMainCarView: BaseView {
+class ELMainPictureView: BaseView {
 
     /*
     // Only override drawRect: if you perform custom drawing.

@@ -8,6 +8,6 @@
 
 import UIKit
 
-class ELMainCarModel: BaseModel {
+class ELMainPictureModel: BaseModel {
 
 }

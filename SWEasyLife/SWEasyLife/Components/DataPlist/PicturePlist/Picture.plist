@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>templateType</key>
+			<string>Template31</string>
+			<key>id</key>
+			<string>befbbffc19714cc2a328f817b9ffcd27picture31</string>
+			<key>index</key>
+			<string>1</string>
+			<key>name</key>
+			<string>Picture图集</string>
+			<key>number</key>
+			<string>INDEX_PICTURELIST</string>
+			<key>adverts</key>
+			<array>
+				<dict>
+					<key>startTime</key>
+					<string>2016-07-14 00:00:00</string>
+					<key>endTime</key>
+					<string>2016-07-31 23:59:59</string>
+					<key>id</key>
+					<string>fde11429439349f597d4e65a9f89bc02</string>
+					<key>index</key>
+					<string>1</string>
+					<key>title</key>
+					<string>精品预售</string>
+					<key>imgPath2</key>
+					<string></string>
+					<key>imgPath</key>
+					<string>3.jpg</string>
+					<key>objId</key>
+					<string>c71cb2734f0343a2a84778310dcb24cc</string>
+					<key>type</key>
+					<string>PRESALE_LIST</string>
+					<key>url</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>startTime</key>
+					<string>2016-07-14 00:00:00</string>
+					<key>endTime</key>
+					<string>2016-07-31 23:59:59</string>
+					<key>id</key>
+					<string>6252f9c611c6459f94d38f9b1acee4e5</string>
+					<key>index</key>
+					<string>2</string>
+					<key>title</key>
+					<string>一元嗨翻购</string>
+					<key>imgPath2</key>
+					<string></string>
+					<key>imgPath</key>
+					<string>4.jpg</string>
+					<key>objId</key>
+					<string>19cdc3f522844f0695dc057ae572ed77</string>
+					<key>type</key>
+					<string>ACTIVITY_LIST</string>
+					<key>url</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>startTime</key>
+					<string>2016-07-14 00:00:00</string>
+					<key>endTime</key>
+					<string>2016-07-31 23:59:59</string>
+					<key>id</key>
+					<string>182cee32f95e4c65a7fa6f8d613ebbdb</string>
+					<key>index</key>
+					<string>3</string>
+					<key>title</key>
+					<string>厨卫电器</string>
+					<key>imgPath2</key>
+					<string></string>
+					<key>imgPath</key>
+					<string>5.jpg</string>
+					<key>objId</key>
+					<string>dba594c2cd7d4be091f105697e830eae</string>
+					<key>type</key>
+					<string>CATEGORY_LIST</string>
+					<key>url</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>startTime</key>
+					<string>2016-07-14 00:00:00</string>
+					<key>endTime</key>
+					<string>2016-07-31 23:59:59</string>
+					<key>id</key>
+					<string>8ae463693c834a3eb9bea50a44153cda</string>
+					<key>index</key>
+					<string>4</string>
+					<key>title</key>
+					<string>新鲜水果</string>
+					<key>imgPath2</key>
+					<string></string>
+					<key>imgPath</key>
+					<string>6.jpg</string>
+					<key>objId</key>
+					<string>ba4fc52c655a42d8a8b6ed25eec973ee</string>
+					<key>type</key>
+					<string>WHOLESALE_LIST</string>
+					<key>url</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>startTime</key>
+					<string>2016-07-14 00:00:00</string>
+					<key>endTime</key>
+					<string>2016-07-31 23:59:59</string>
+					<key>id</key>
+					<string>d379e2b4b0794fb18ca43b9c71503d07</string>
+					<key>index</key>
+					<string>5</string>
+					<key>title</key>
+					<string>限时抢购</string>
+					<key>imgPath2</key>
+					<string></string>
+					<key>imgPath</key>
+					<string>7.jpg</string>
+					<key>objId</key>
+					<string>19cdc3f522844f0695dc057ae572ed77</string>
+					<key>type</key>
+					<string>PANICBUYING_LIST</string>
+					<key>url</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>startTime</key>
+					<string>2016-07-14 00:00:00</string>
+					<key>endTime</key>
+					<string>2016-07-31 23:59:59</string>
+					<key>id</key>
+					<string>0d40e1a3004a48488b82efdc702b1de1</string>
+					<key>index</key>
+					<string>6</string>
+					<key>title</key>
+					<string>食品酒饮</string>
+					<key>imgPath2</key>
+					<string></string>
+					<key>imgPath</key>
+					<string>8.jpg</string>
+					<key>objId</key>
+					<string>19cdc3f522844f0695dc057ae572ed77</string>
+					<key>type</key>
+					<string>PANICBUYING_DETAIL</string>
+					<key>url</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>startTime</key>
+					<string>2016-07-14 00:00:00</string>
+					<key>endTime</key>
+					<string>2016-07-31 23:59:59</string>
+					<key>id</key>
+					<string>e1cb1f87123542bb880252ccf686c0d9</string>
+					<key>index</key>
+					<string>7</string>
+					<key>title</key>
+					<string>家纺家装</string>
+					<key>imgPath2</key>
+					<string></string>
+					<key>imgPath</key>
+					<string>9.jpg</string>
+					<key>objId</key>
+					<string>6c08d00110284976a47aba188b3a9587</string>
+					<key>type</key>
+					<string>PANICBUYING_LIST</string>
+					<key>url</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>startTime</key>
+					<string>2016-07-14 00:00:00</string>
+					<key>endTime</key>
+					<string>2016-07-31 23:59:59</string>
+					<key>id</key>
+					<string>8835e9b324b24c60877905a06ada4b5a</string>
+					<key>index</key>
+					<string>8</string>
+					<key>title</key>
+					<string>粮油干货</string>
+					<key>imgPath2</key>
+					<string></string>
+					<key>imgPath</key>
+					<string>10.jpg</string>
+					<key>objId</key>
+					<string>878a1db8e07747418d4f9120c74480a8</string>
+					<key>type</key>
+					<string>WEB_LINK</string>
+					<key>url</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>startTime</key>
+					<string>2016-07-14 00:00:00</string>
+					<key>endTime</key>
+					<string>2016-07-31 23:59:59</string>
+					<key>id</key>
+					<string>6252f9c611c6459f94d38f9b1acee4e5</string>
+					<key>index</key>
+					<string>9</string>
+					<key>title</key>
+					<string>背景图片</string>
+					<key>imgPath2</key>
+					<string></string>
+					<key>imgPath</key>
+					<string>11.jpg</string>
+					<key>objId</key>
+					<string>19cdc3f522844f0695dc057ae572ed77</string>
+					<key>type</key>
+					<string>NEWUSER_LIST</string>
+					<key>url</key>
+					<string></string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

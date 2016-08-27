@@ -9,5 +9,19 @@
 import UIKit
 
 class ELMainPictureListModel: BaseListModel {
+    
+    override func loadFirstTime(firstTime: Bool) {
+        
+        //加载数据
+        let homeDataPath = NSBundle.mainBundle().pathForResource("Picture", ofType: "plist")
+        ELHttpRequest.sharedInstance.requestHomeDatas(url: homeDataPath, parmas: nil) { (isSuccessed, datas, error) in
+            
+            if (self.resultBlock != nil) {
+                self.resultBlock!(isSuccessed: isSuccessed,datas: datas,error: error)
+            }
+        }
+    }
+    
+    
 
 }

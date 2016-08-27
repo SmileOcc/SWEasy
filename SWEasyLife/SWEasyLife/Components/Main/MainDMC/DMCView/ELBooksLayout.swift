@@ -11,7 +11,7 @@ import UIKit
 private let PageWidth: CGFloat = 362
 private let PageHeight: CGFloat = 568
 
-class ELBooksLayout: UICollectionViewFlowLayout {
+class ELBooksLayout: BaseCollectionViewFlowLayout {
     
     override init() {
         super.init()

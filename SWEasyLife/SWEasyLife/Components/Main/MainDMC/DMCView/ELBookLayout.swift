@@ -12,7 +12,7 @@ private let PageWidth: CGFloat = k_SCREEN_WIDE - 100
 private let PageHeight: CGFloat = k_SCREEN_HEIGHT - 64 - 49 - 80
 
 
-class ELBookLayout: UICollectionViewFlowLayout {
+class ELBookLayout: BaseCollectionViewFlowLayout {
 
     var numberOfItems = 0
 

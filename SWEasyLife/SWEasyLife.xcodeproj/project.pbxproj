@@ -102,6 +102,10 @@
 		2EEEEFAD1D71EBDA00FECC58 /* CategroyFirst.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EEEEFA61D71EBDA00FECC58 /* CategroyFirst.plist */; };
 		2EEEEFAE1D71EBDA00FECC58 /* Books.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EEEEFA81D71EBDA00FECC58 /* Books.plist */; };
 		2EEEEFB01D71EC4800FECC58 /* Picture.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EEEEFAF1D71EC4800FECC58 /* Picture.plist */; };
+		2EEEEFB31D7280FB00FECC58 /* Html in Resources */ = {isa = PBXBuildFile; fileRef = 2EEEEFB21D7280FB00FECC58 /* Html */; };
+		2EEEEFB51D72860700FECC58 /* BaseWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEEEFB41D72860700FECC58 /* BaseWebView.swift */; };
+		2EEEEFBD1D72874C00FECC58 /* SWMovieWebCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEEEFBC1D72874C00FECC58 /* SWMovieWebCtrl.swift */; };
+		2EEEEFBF1D72877000FECC58 /* SWMovieWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEEEFBE1D72877000FECC58 /* SWMovieWebView.swift */; };
 		463575AE1D4F15CD0050A323 /* home1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 463575A61D4F15CD0050A323 /* home1.jpg */; };
 		463575AF1D4F15CD0050A323 /* home2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 463575A71D4F15CD0050A323 /* home2.jpg */; };
 		463575B01D4F15CD0050A323 /* home3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 463575A81D4F15CD0050A323 /* home3.jpg */; };
@@ -225,6 +229,10 @@
 		2EEEEFA61D71EBDA00FECC58 /* CategroyFirst.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CategroyFirst.plist; sourceTree = "<group>"; };
 		2EEEEFA81D71EBDA00FECC58 /* Books.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Books.plist; sourceTree = "<group>"; };
 		2EEEEFAF1D71EC4800FECC58 /* Picture.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Picture.plist; sourceTree = "<group>"; };
+		2EEEEFB21D7280FB00FECC58 /* Html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Html; sourceTree = "<group>"; };
+		2EEEEFB41D72860700FECC58 /* BaseWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebView.swift; sourceTree = "<group>"; };
+		2EEEEFBC1D72874C00FECC58 /* SWMovieWebCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWMovieWebCtrl.swift; sourceTree = "<group>"; };
+		2EEEEFBE1D72877000FECC58 /* SWMovieWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWMovieWebView.swift; sourceTree = "<group>"; };
 		463575A61D4F15CD0050A323 /* home1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home1.jpg; sourceTree = "<group>"; };
 		463575A71D4F15CD0050A323 /* home2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home2.jpg; sourceTree = "<group>"; };
 		463575A81D4F15CD0050A323 /* home3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home3.jpg; sourceTree = "<group>"; };
@@ -313,6 +321,7 @@
 		2E174C6B1D3B59B6008D0213 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2EEEEFB21D7280FB00FECC58 /* Html */,
 				2E174C6D1D3B59B6008D0213 /* Main */,
 				2E174C6C1D3B59B6008D0213 /* Extension */,
 				2E174C6E1D3B59B6008D0213 /* SelfLibs */,
@@ -331,6 +340,7 @@
 		2E174C6D1D3B59B6008D0213 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2EEEEFB81D7286BF00FECC58 /* MainWeb */,
 				2EC549C91D50402E003767DD /* MainPicture */,
 				2E174C771D3B5A88008D0213 /* MainHome */,
 				2E174C751D3B5A88008D0213 /* MainCategory */,
@@ -509,6 +519,7 @@
 				2E5E82F81D446B860019E0A2 /* BaseScrollView.swift */,
 				2EAD0F4D1D47B8510089E514 /* BaseCollectionCell.swift */,
 				2EEEEF9F1D71E8AE00FECC58 /* BaseCollectionViewFlowLayout.swift */,
+				2EEEEFB41D72860700FECC58 /* BaseWebView.swift */,
 			);
 			path = SelfView;
 			sourceTree = "<group>";
@@ -706,6 +717,39 @@
 			path = PicturePlist;
 			sourceTree = "<group>";
 		};
+		2EEEEFB81D7286BF00FECC58 /* MainWeb */ = {
+			isa = PBXGroup;
+			children = (
+				2EEEEFB91D7286BF00FECC58 /* WebCtrl */,
+				2EEEEFBA1D7286BF00FECC58 /* WebModel */,
+				2EEEEFBB1D7286BF00FECC58 /* WebView */,
+			);
+			path = MainWeb;
+			sourceTree = "<group>";
+		};
+		2EEEEFB91D7286BF00FECC58 /* WebCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				2EEEEFBC1D72874C00FECC58 /* SWMovieWebCtrl.swift */,
+			);
+			path = WebCtrl;
+			sourceTree = "<group>";
+		};
+		2EEEEFBA1D7286BF00FECC58 /* WebModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebModel;
+			sourceTree = "<group>";
+		};
+		2EEEEFBB1D7286BF00FECC58 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				2EEEEFBE1D72877000FECC58 /* SWMovieWebView.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		46E016461D3F4D8E001C4BE0 /* DataPlist */ = {
 			isa = PBXGroup;
 			children = (
@@ -848,6 +892,7 @@
 				463575AF1D4F15CD0050A323 /* home2.jpg in Resources */,
 				2E5E82E41D43E26A0019E0A2 /* 13.jpg in Resources */,
 				2E174CD81D3BC899008D0213 /* icon_tabBuy_1@2x.png in Resources */,
+				2EEEEFB31D7280FB00FECC58 /* Html in Resources */,
 				2E174CDE1D3BC899008D0213 /* icon_tabHome_2@2x.png in Resources */,
 				2E174CD11D3BC899008D0213 /* icn_dmc_1@3x.png in Resources */,
 				2E5E82EC1D43E28B0019E0A2 /* 17.jpg in Resources */,
@@ -971,7 +1016,9 @@
 				46E016531D3F6062001C4BE0 /* ELHomeMainTableView.swift in Sources */,
 				2EEEEFA21D71E97100FECC58 /* ELPictureCollectionLayout.swift in Sources */,
 				2EAD0F4C1D47B5BF0089E514 /* ELDMCBooksView.swift in Sources */,
+				2EEEEFBF1D72877000FECC58 /* SWMovieWebView.swift in Sources */,
 				2EAD0F4E1D47B8510089E514 /* BaseCollectionCell.swift in Sources */,
+				2EEEEFBD1D72874C00FECC58 /* SWMovieWebCtrl.swift in Sources */,
 				2E174CB11D3BC66C008D0213 /* BaseButton.swift in Sources */,
 				2EAD0F601D48F4A60089E514 /* UIImage+Helpers.swift in Sources */,
 				46E0166C1D3F69B9001C4BE0 /* PublicMacro.swift in Sources */,
@@ -986,6 +1033,7 @@
 				2E5E82981D4331570019E0A2 /* ELCollectionView.swift in Sources */,
 				46AE6E611D45CED80024CF7D /* ELCategoryModel.swift in Sources */,
 				2E174CAF1D3BC66C008D0213 /* BaseViewController.swift in Sources */,
+				2EEEEFB51D72860700FECC58 /* BaseWebView.swift in Sources */,
 				2E174CA01D3B5DE1008D0213 /* MainMyCtrl.swift in Sources */,
 				2EAD0F561D47C0140089E514 /* ELBookModel.swift in Sources */,
 				2E5E834A1D4666DC0019E0A2 /* Template2.swift in Sources */,

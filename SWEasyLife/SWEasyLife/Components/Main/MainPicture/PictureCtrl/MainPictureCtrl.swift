@@ -116,6 +116,9 @@ class MainPictureCtrl: BaseViewController {
     
     func onAdd() {
         print("on add")
+        
+        let moviewWebCtrl = SWMovieWebCtrl()
+        self.navigationController?.pushViewController(moviewWebCtrl, animated: true)
     }
     
     func onRemove() {

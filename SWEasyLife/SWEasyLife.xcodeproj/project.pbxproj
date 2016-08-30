@@ -116,6 +116,8 @@
 		463575B51D4F15CD0050A323 /* home8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 463575AD1D4F15CD0050A323 /* home8.jpg */; };
 		466E1CD01D4C45CC005CF4A6 /* HomeStoreAdverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E1CCF1D4C45CC005CF4A6 /* HomeStoreAdverModel.swift */; };
 		468003D01D75223800B76629 /* Template8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468003CF1D75223800B76629 /* Template8.swift */; };
+		468003D21D75440200B76629 /* BaseControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468003D11D75440200B76629 /* BaseControl.swift */; };
+		468003D41D75468A00B76629 /* ELPaoMaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468003D31D75468A00B76629 /* ELPaoMaView.swift */; };
 		46A70CBF1D45F1F9005A5EA5 /* ELHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A70CBE1D45F1F9005A5EA5 /* ELHttpRequest.swift */; };
 		46AE6E611D45CED80024CF7D /* ELCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AE6E601D45CED80024CF7D /* ELCategoryModel.swift */; };
 		46E016491D3F4DE2001C4BE0 /* Home.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46E016481D3F4DE2001C4BE0 /* Home.plist */; };
@@ -244,6 +246,8 @@
 		463575AD1D4F15CD0050A323 /* home8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home8.jpg; sourceTree = "<group>"; };
 		466E1CCF1D4C45CC005CF4A6 /* HomeStoreAdverModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeStoreAdverModel.swift; sourceTree = "<group>"; };
 		468003CF1D75223800B76629 /* Template8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Template8.swift; sourceTree = "<group>"; };
+		468003D11D75440200B76629 /* BaseControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseControl.swift; sourceTree = "<group>"; };
+		468003D31D75468A00B76629 /* ELPaoMaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELPaoMaView.swift; sourceTree = "<group>"; };
 		46A70CBE1D45F1F9005A5EA5 /* ELHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELHttpRequest.swift; sourceTree = "<group>"; };
 		46AE6E601D45CED80024CF7D /* ELCategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELCategoryModel.swift; sourceTree = "<group>"; };
 		46E016481D3F4DE2001C4BE0 /* Home.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Home.plist; sourceTree = "<group>"; };
@@ -522,6 +526,7 @@
 				2EAD0F4D1D47B8510089E514 /* BaseCollectionCell.swift */,
 				2EEEEF9F1D71E8AE00FECC58 /* BaseCollectionViewFlowLayout.swift */,
 				2EEEEFB41D72860700FECC58 /* BaseWebView.swift */,
+				468003D11D75440200B76629 /* BaseControl.swift */,
 			);
 			path = SelfView;
 			sourceTree = "<group>";
@@ -645,6 +650,7 @@
 				2E5E82971D4331570019E0A2 /* ELCollectionView.swift */,
 				46F7D1051D4870A3007801F1 /* ExtensionView.swift */,
 				2EAD0F5F1D48F4A60089E514 /* UIImage+Helpers.swift */,
+				468003D31D75468A00B76629 /* ELPaoMaView.swift */,
 			);
 			path = SelfPublic;
 			sourceTree = "<group>";
@@ -1013,10 +1019,12 @@
 				46F7D1061D4870A3007801F1 /* ExtensionView.swift in Sources */,
 				2EEEEF9C1D71993100FECC58 /* ELMainPictureListModel.swift in Sources */,
 				2E174C9E1D3B5DC9008D0213 /* MainDMCCtrl.swift in Sources */,
+				468003D21D75440200B76629 /* BaseControl.swift in Sources */,
 				2EC549D11D50402E003767DD /* ELMainPictureModel.swift in Sources */,
 				46E0164B1D3F5E64001C4BE0 /* BaseTableView.swift in Sources */,
 				2E174CB01D3BC66C008D0213 /* BaseModel.swift in Sources */,
 				46E016531D3F6062001C4BE0 /* ELHomeMainTableView.swift in Sources */,
+				468003D41D75468A00B76629 /* ELPaoMaView.swift in Sources */,
 				2EEEEFA21D71E97100FECC58 /* ELPictureCollectionLayout.swift in Sources */,
 				2EAD0F4C1D47B5BF0089E514 /* ELDMCBooksView.swift in Sources */,
 				2EEEEFBF1D72877000FECC58 /* SWMovieWebView.swift in Sources */,

@@ -107,7 +107,7 @@
 		2EEEEFBD1D72874C00FECC58 /* SWMovieWebCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEEEFBC1D72874C00FECC58 /* SWMovieWebCtrl.swift */; };
 		2EEEEFBF1D72877000FECC58 /* SWMovieWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEEEFBE1D72877000FECC58 /* SWMovieWebView.swift */; };
 		2EEEEFE01D771D7D00FECC58 /* ELPaoMaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEEEFDD1D771D7D00FECC58 /* ELPaoMaView.swift */; };
-		2EEEEFE11D771D7D00FECC58 /* ELFunctionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEEEFDF1D771D7D00FECC58 /* ELFunctionModel.swift */; };
+		2EEEEFE31D77201A00FECC58 /* Template8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEEEFE21D77201A00FECC58 /* Template8.swift */; };
 		463575AE1D4F15CD0050A323 /* home1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 463575A61D4F15CD0050A323 /* home1.jpg */; };
 		463575AF1D4F15CD0050A323 /* home2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 463575A71D4F15CD0050A323 /* home2.jpg */; };
 		463575B01D4F15CD0050A323 /* home3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 463575A81D4F15CD0050A323 /* home3.jpg */; };
@@ -236,7 +236,7 @@
 		2EEEEFBC1D72874C00FECC58 /* SWMovieWebCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWMovieWebCtrl.swift; sourceTree = "<group>"; };
 		2EEEEFBE1D72877000FECC58 /* SWMovieWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWMovieWebView.swift; sourceTree = "<group>"; };
 		2EEEEFDD1D771D7D00FECC58 /* ELPaoMaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELPaoMaView.swift; sourceTree = "<group>"; };
-		2EEEEFDF1D771D7D00FECC58 /* ELFunctionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELFunctionModel.swift; sourceTree = "<group>"; };
+		2EEEEFE21D77201A00FECC58 /* Template8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Template8.swift; sourceTree = "<group>"; };
 		463575A61D4F15CD0050A323 /* home1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home1.jpg; sourceTree = "<group>"; };
 		463575A71D4F15CD0050A323 /* home2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home2.jpg; sourceTree = "<group>"; };
 		463575A81D4F15CD0050A323 /* home3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home3.jpg; sourceTree = "<group>"; };
@@ -767,7 +767,6 @@
 		2EEEEFDE1D771D7D00FECC58 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2EEEEFDF1D771D7D00FECC58 /* ELFunctionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -805,6 +804,7 @@
 		46E016511D3F6028001C4BE0 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				2EEEEFE21D77201A00FECC58 /* Template8.swift */,
 				46E016521D3F6062001C4BE0 /* ELHomeMainTableView.swift */,
 				46E0165E1D3F618A001C4BE0 /* ELMainHomeView.swift */,
 				2E5E833F1D4666DC0019E0A2 /* Template0.swift */,
@@ -1072,13 +1072,13 @@
 				2EEEEFA01D71E8AE00FECC58 /* BaseCollectionViewFlowLayout.swift in Sources */,
 				2EAD0F581D47C0480089E514 /* ELBookStoreModel.swift in Sources */,
 				2EC549D21D50402E003767DD /* ELMainPictureView.swift in Sources */,
+				2EEEEFE31D77201A00FECC58 /* Template8.swift in Sources */,
 				2EC549D01D50402E003767DD /* MainPictureCtrl.swift in Sources */,
 				46E016591D3F60F9001C4BE0 /* ELMainCategoryModel.swift in Sources */,
 				2E5E834E1D4666DC0019E0A2 /* Template6.swift in Sources */,
 				2E5E834D1D4666DC0019E0A2 /* Template5.swift in Sources */,
 				2E174C711D3B5A05008D0213 /* MainTabBarCtrl.swift in Sources */,
 				2E5E82921D4328BB0019E0A2 /* ELBannerView.swift in Sources */,
-				2EEEEFE11D771D7D00FECC58 /* ELFunctionModel.swift in Sources */,
 				2E5E834F1D4666DC0019E0A2 /* Template7.swift in Sources */,
 				2EAD0F661D4903E10089E514 /* ELBookLayout.swift in Sources */,
 				2E5E82961D4331380019E0A2 /* BaseCollectionView.swift in Sources */,

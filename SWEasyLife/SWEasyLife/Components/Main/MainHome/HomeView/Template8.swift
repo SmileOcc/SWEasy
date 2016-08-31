@@ -45,9 +45,6 @@ class Template8: TemplateBase {
             self.addSubview(tempView)
         }
         
-        let paoMaView = ELPaoMaView(frame: CGRectMake(0, self.frame.size.height - 70, self.frame.size.width, 70), title: "信仰仍然在燃烧。。。。。。。")
-        self.addSubview(paoMaView)
-        
         
     }
     

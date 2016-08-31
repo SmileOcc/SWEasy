@@ -65,65 +65,6 @@
 		</dict>
 		<dict>
 			<key>templateType</key>
-			<string>Template8</string>
-			<key>id</key>
-			<string>bd8769c56ad04fe7a79abc2fb1e015b28</string>
-			<key>index</key>
-			<string>11</string>
-			<key>name</key>
-			<string>app首页轮播图1-8-INDEX_BANNER</string>
-			<key>number</key>
-			<string>INDEX_Enum</string>
-			<key>adverts</key>
-			<array>
-				<dict>
-					<key>startTime</key>
-					<string>2016-07-14 00:00:00</string>
-					<key>endTime</key>
-					<string>2016-07-31 23:59:59</string>
-					<key>id</key>
-					<string>fca1ff31f6414984929883dd2c3ce4d1</string>
-					<key>index</key>
-					<string>1</string>
-					<key>title</key>
-					<string>系统公测</string>
-					<key>imgPath2</key>
-					<string></string>
-					<key>imgPath</key>
-					<string>2.jpg</string>
-					<key>objId</key>
-					<string>c71cb2734f0343a2a84778310dcb24cc</string>
-					<key>type</key>
-					<string>PANICBUYING_LIST</string>
-					<key>url</key>
-					<string></string>
-				</dict>
-				<dict>
-					<key>startTime</key>
-					<string>2016-07-14 00:00:00</string>
-					<key>endTime</key>
-					<string>2016-07-31 23:59:59</string>
-					<key>id</key>
-					<string>e067e5ab8e2c400f93dd99adb1f7a70d</string>
-					<key>index</key>
-					<string>2</string>
-					<key>title</key>
-					<string>系统公测2</string>
-					<key>imgPath2</key>
-					<string></string>
-					<key>imgPath</key>
-					<string>3.jpg</string>
-					<key>objId</key>
-					<string>e31c4461dab946529a34391b109d66d3</string>
-					<key>type</key>
-					<string>PANICBUYING_LIST</string>
-					<key>url</key>
-					<string></string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>templateType</key>
 			<string>Template1</string>
 			<key>id</key>
 			<string>befbbffc19714cc2a328f817b9ffcd27</string>

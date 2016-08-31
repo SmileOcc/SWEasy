@@ -63,29 +63,13 @@ class Template8: TemplateBase {
             }
             
         }
+    /*
+    // Only override drawRect: if you perform custom drawing.
+    // An empty implementation adversely affects performance during animation.
+    override func drawRect(rect: CGRect) {
+        // Drawing code
+    }
+    */
     }
 
 }
-
-
-//class itemView: BaseControl {
-//    
-//    var imgView = BaseImageView()
-//    var titleLab = BaseLable()
-//    
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        
-//        self.initViews()
-//    }
-//    
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//    }
-//    
-//    func initViews() {
-//        
-//        self.imgView.frame = CGRectMake(0,0,self.frame.width,self.frame.size.height)
-//        self.titleLab.frame = CGRectMake(1,1,1,1)
-//    }
-//}
